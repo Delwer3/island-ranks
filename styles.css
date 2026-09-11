@@ -1,0 +1,672 @@
+/* --- MINECRAFT THEME & COLOR PALETTE --- */
+:root {
+  --mc-dark-bg: #121214;
+  --mc-panel-bg: #1f1f23;
+  --mc-panel-border: #3b3b44;
+  --mc-slot-bg: #2a2a30;
+  --mc-slot-border-dark: #151518;
+  --mc-slot-border-light: #4c4c57;
+  --mc-gold: #ffaa00;
+  --mc-aqua: #55ffff;
+  --mc-green: #55ff55;
+  --mc-red: #ff5555;
+  --mc-purple: #aa00aa;
+  --mc-light-purple: #ff55ff;
+  --mc-yellow: #ffff55;
+  --mc-white: #ffffff;
+  --mc-gray: #aaaaaa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.mc-theme {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--mc-dark-bg);
+  color: #e0e0e0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background textures */
+.mc-bg-dirt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#2c2016 1px, transparent 1px), radial-gradient(#1e150e 1px, #120e0a 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  opacity: 0.85;
+  z-index: -2;
+}
+
+.mc-bg-vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.85) 90%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.mc-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Fonts */
+.mc-font {
+  font-family: 'VT323', monospace;
+  letter-spacing: 1px;
+}
+
+.app-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 16px 60px 16px;
+}
+
+/* Header */
+.mc-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 30px 20px;
+  background: linear-gradient(180deg, rgba(35, 35, 45, 0.85) 0%, rgba(20, 20, 25, 0.95) 100%);
+  border: 3px solid #4a4a58;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), inset 0 2px 0 #6e6e80;
+}
+
+.server-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid #4a4a58;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: var(--mc-yellow);
+  margin-bottom: 14px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.server-badge .star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mc-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(20px, 4vw, 32px);
+  color: #ffaa00;
+  text-shadow: 3px 3px 0 #3f2a00, 5px 5px 0 #000;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.mc-subtitle {
+  font-size: 15px;
+  color: #bbb;
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+}
+
+/* Stats grid */
+.mc-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.mc-stat-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #3d3d4a;
+  border-radius: 4px;
+  padding: 12px 16px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.05);
+}
+
+.mc-stat-box img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.stat-value {
+  display: block;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* Navigation & Filters */
+.mc-nav-bar {
+  background: #25252d;
+  border: 3px solid #4a4a58;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.era-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Minecraft Button Style */
+.mc-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  padding: 10px 14px;
+  background: #4a4a54;
+  color: #ffffff;
+  border-top: 2px solid #6b6b77;
+  border-left: 2px solid #6b6b77;
+  border-bottom: 2px solid #232328;
+  border-right: 2px solid #232328;
+  cursor: pointer;
+  text-shadow: 2px 2px 0 #000;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.mc-btn:hover {
+  background: #5b5b67;
+}
+
+.mc-btn.active {
+  background: #2f6b3f;
+  border-top: 2px solid #459a5d;
+  border-left: 2px solid #459a5d;
+  border-bottom: 2px solid #14331d;
+  border-right: 2px solid #14331d;
+  color: var(--mc-yellow);
+}
+
+.search-box {
+  flex-grow: 1;
+  max-width: 320px;
+}
+
+.mc-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #141418;
+  border: 2px solid #4a4a58;
+  border-radius: 4px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.mc-input:focus {
+  border-color: var(--mc-aqua);
+}
+
+.secondary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #373742;
+  padding-top: 12px;
+}
+
+.view-toggles {
+  display: flex;
+  gap: 8px;
+}
+
+.mc-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #1e1e24;
+  border: 1px solid #444450;
+  color: #aaa;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mc-toggle-btn.active {
+  background: #393946;
+  color: #fff;
+  border-color: #666675;
+}
+
+.ranks-count-badge {
+  font-size: 13px;
+  color: #8e8e9c;
+}
+
+/* CARDS GRID */
+.ranks-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 500px) {
+  .ranks-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Rank Card */
+.rank-card {
+  background: #1d1d24;
+  border: 3px solid #3d3d4b;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.rank-card:hover {
+  transform: translateY(-3px);
+  border-color: #5d5d70;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #272732;
+  border-bottom: 2px solid #383846;
+}
+
+.rank-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rank-badge {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  background: #0d0d10;
+  color: var(--mc-yellow);
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #414152;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.rank-name {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 13px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.era-tag {
+  font-size: 11px;
+  background: #363644;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: #bbb;
+}
+
+/* Card Body */
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-grow: 1;
+}
+
+/* Requirements Section */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: var(--mc-aqua);
+  text-shadow: 1px 1px 0 #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title img {
+  width: 18px;
+  height: 18px;
+}
+
+.req-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.req-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #141419;
+  border: 1px solid #2e2e38;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.req-chip img {
+  width: 22px;
+  height: 22px;
+}
+
+.chip-label {
+  color: #8e8e9e;
+  font-size: 11px;
+  display: block;
+}
+
+.chip-val {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Minecraft Inventory Slots Grid */
+.mc-slots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #15151a;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #2e2e3a;
+}
+
+.mc-slot {
+  width: 44px;
+  height: 44px;
+  background-color: #8b8b8b;
+  border-top: 3px solid #373737;
+  border-left: 3px solid #373737;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mc-slot:hover {
+  background-color: #a8a8a8;
+}
+
+.mc-slot img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.mc-slot .item-count {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  pointer-events: none;
+}
+
+/* Island Bonuses Row */
+.bonuses-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: rgba(40, 100, 50, 0.15);
+  border: 1px solid rgba(80, 180, 100, 0.3);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.bonus-pill {
+  font-size: 11px;
+  color: #70d890;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Unique Reward Card Box (The Star of the Show!) */
+.unique-reward-box {
+  background: linear-gradient(135deg, rgba(45, 20, 55, 0.9) 0%, rgba(20, 15, 30, 0.95) 100%);
+  border: 2px solid #9c45bf;
+  border-radius: 6px;
+  padding: 14px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(156, 69, 191, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.unique-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: #f77fff;
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 10px;
+}
+
+.unique-header img {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(0 0 6px #f77fff);
+}
+
+.unique-desc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.unique-desc-list li {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e2d7ea;
+}
+
+/* Special Armor Set Highlight Box */
+.special-set-badge {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #d488ff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.set-badge-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: #ffdc55;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.set-pieces-slots {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* MINECRAFT ITEM TOOLTIP */
+.mc-tooltip {
+  position: fixed;
+  z-index: 9999;
+  background: #100010;
+  border: 2px solid;
+  border-image: linear-gradient(180deg, #28007F 0%, #14003F 100%) 1;
+  padding: 10px 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.9);
+  pointer-events: none;
+  max-width: 320px;
+  min-width: 200px;
+}
+
+.tooltip-title {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.tooltip-lore {
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.3;
+}
+
+/* TABLE VIEW */
+.ranks-table-wrapper {
+  background: #1d1d24;
+  border: 3px solid #3d3d4b;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.mc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.mc-table th {
+  background: #272732;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: var(--mc-yellow);
+  padding: 14px 12px;
+  border-bottom: 2px solid #3d3d4b;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.mc-table td {
+  padding: 12px;
+  border-bottom: 1px solid #2e2e38;
+  vertical-align: middle;
+}
+
+.mc-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Footer */
+.mc-footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 24px;
+  background: #18181f;
+  border: 2px solid #333340;
+  border-radius: 6px;
+}
+
+.server-ip-box {
+  display: inline-block;
+  background: #0d0d12;
+  border: 2px dashed #ffaa00;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #ffaa00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: all 0.2s;
+}
+
+.server-ip-box:hover {
+  background: #252010;
+  transform: scale(1.03);
+}
+
+.copy-badge {
+  font-size: 9px;
+  background: #443300;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  color: #ffea88;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #777;
+}
+
+/* MC Color Spans */
+.mc-c-0 { color: #000000; }
+.mc-c-1 { color: #0000aa; }
+.mc-c-2 { color: #00aa00; }
+.mc-c-3 { color: #00aaaa; }
+.mc-c-4 { color: #aa0000; }
+.mc-c-5 { color: #aa00aa; }
+.mc-c-6 { color: #ffaa00; }
+.mc-c-7 { color: #aaaaaa; }
+.mc-c-8 { color: #555555; }
+.mc-c-9 { color: #5555ff; }
+.mc-c-a { color: #55ff55; }
+.mc-c-b { color: #55ffff; }
+.mc-c-c { color: #ff5555; }
+.mc-c-d { color: #ff55ff; }
+.mc-c-e { color: #ffff55; }
+.mc-c-f { color: #ffffff; }
+.mc-bold { font-weight: bold; }
+.mc-italic { font-style: italic; }
+.mc-underline { text-decoration: underline; }
+.mc-strikethrough { text-decoration: line-through; }
