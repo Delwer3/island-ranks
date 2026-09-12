@@ -17,7 +17,11 @@ const MATERIAL_MAP = {
   'vanillaitem': null,
   'grass_block': 'grass_block_top',
   'oak_log': 'oak_log_top',
-  'spruce_log': 'spruce_log_top'
+  'spruce_log': 'spruce_log_top',
+  'moneda_cobre': 'copper_ingot',
+  'moneda_oro': 'gold_nugget',
+  'moneda_diamante': 'diamond',
+  'moneda_netherite': 'netherite_scrap'
 };
 
 // Item Tooltip Database for Special Sets and items
@@ -81,6 +85,22 @@ const SPECIAL_ITEMS_TOOLTIPS = {
   'DeidadOneBlock_weapon': {
     name: '&d✧ Hacha de la Deidad',
     lore: '&7Un hacha de combate devastadora y balanceada.\n&c+20% Daño en Combate\n&aAtaque en Área (Cleave III)\n&4Robo de Vida Moderado\n&9Sharpness VI, Unbreaking IV, Mending'
+  },
+  'moneda_cobre': {
+    name: '&6🪙 Moneda de Cobre',
+    lore: '&7Moneda básica de la isla.\n&eRecompensa diaria y de ascenso.\n&8Uso: Economía de isla y mejoras básicas.'
+  },
+  'moneda_oro': {
+    name: '&e🪙 Moneda de Oro',
+    lore: '&7Moneda comercial de la isla.\n&eObtenible a partir de la Era II.\n&8Uso: Mercaderes y comercio avanzado.'
+  },
+  'moneda_diamante': {
+    name: '&b🪙 Moneda de Diamante',
+    lore: '&7Moneda élite de la isla.\n&eObtenible a partir de la Era III.\n&8Uso: Recursos legendarios y llaves.'
+  },
+  'moneda_netherite': {
+    name: '&5🪙 Moneda de Netherita',
+    lore: '&7Moneda mítica suprema de la isla.\n&dExclusiva de los rangos superiores (Era IV).\n&8Uso: Acceso a las mayores recompensas de OneBlock.'
   }
 };
 
@@ -194,8 +214,25 @@ function renderCards(ranks) {
     const levelCond = rank.requirements.conditions.find(c => c.expression.includes('superior_island_level'));
     const levelLabel = levelCond ? levelCond.label : 'Nivel de Isla Requerido';
 
+    // Extract Extra Conditions (Bosses, communal skills, mob kills)
+    const extraConds = rank.requirements.conditions.filter(c => 
+      !c.expression.includes('oneblock.phase') && !c.expression.includes('superior_island_level')
+    );
+
     // Special items / sets
     const specialSet = rank.rewards.unique?.specialSet;
+    const setKey = rank.weight === 10 ? 'SenorDiamante' : (rank.weight === 20 ? 'TitanAbismo' : 'DeidadOneBlock');
+    const weaponIcon = rank.weight === 10 ? 'bow' : (rank.weight === 20 ? 'netherite_sword' : 'netherite_axe');
+
+    const COIN_META = {
+      cobre: { name: 'Cobre', mat: 'moneda_cobre', class: 'coin-cobre' },
+      oro: { name: 'Oro', mat: 'moneda_oro', class: 'coin-oro' },
+      diamante: { name: 'Diamante', mat: 'moneda_diamante', class: 'coin-diamante' },
+      netherite: { name: 'Netherita', mat: 'moneda_netherite', class: 'coin-netherite' }
+    };
+
+    const dailyCoinsEntries = Object.entries(rank.coins?.daily || {});
+    const uniqueCoinsEntries = Object.entries(rank.coins?.unique || {});
 
     card.innerHTML = `
       <!-- Header -->
@@ -245,9 +282,19 @@ function renderCards(ranks) {
               <img src="${getMinecraftAssetUrl('EXPERIENCE_BOTTLE')}" onerror="handleImgError(this)" class="mc-pixelated" alt="XP">
               <div>
                 <span class="chip-label">Experiencia</span>
-                <span class="chip-val" style="color: var(--mc-green);">${rank.requirements.xp} Niveles</span>
+                <span class="chip-val" style="color: var(--mc-c-a);">${rank.requirements.xp} Niveles</span>
               </div>
             </div>
+
+            ${extraConds.map(c => `
+              <div class="req-chip" onmouseenter="showTooltip(event, '${c.label}', 'Requisito especial de ascenso')" onmouseleave="hideTooltip()">
+                <img src="${getMinecraftAssetUrl(c.icon)}" onerror="handleImgError(this)" class="mc-pixelated" alt="Cond">
+                <div>
+                  <span class="chip-label">Desafío</span>
+                  <span class="chip-val" style="color: var(--mc-c-b);">${c.label}</span>
+                </div>
+              </div>
+            `).join('')}
           </div>
 
           <!-- Items required slots -->
@@ -262,6 +309,38 @@ function renderCards(ranks) {
               `).join('')}
             </div>
           ` : ''}
+        </div>
+
+        <!-- Monedas de Isla (Economía) -->
+        <div class="coins-reward-box">
+          <div class="coins-section-header">
+            <img src="${getMinecraftAssetUrl('moneda_oro')}" class="mc-pixelated" alt="Monedas">
+            <span>MONEDAS DE ISLA</span>
+          </div>
+          <div class="coins-groups">
+            <div class="coins-subgroup">
+              <span class="coins-subgroup-title">Diarias:</span>
+              <div class="coins-chips-row">
+                ${dailyCoinsEntries.map(([type, amt]) => `
+                  <div class="coin-chip ${COIN_META[type]?.class || ''}" onmouseenter="showSpecialTooltip(event, 'moneda_${type}')" onmouseleave="hideTooltip()">
+                    <img src="${getMinecraftAssetUrl(COIN_META[type]?.mat)}" class="mc-pixelated" alt="${type}">
+                    <span class="coin-amount">${amt}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="coins-subgroup">
+              <span class="coins-subgroup-title">Al Ascender (1x):</span>
+              <div class="coins-chips-row">
+                ${uniqueCoinsEntries.map(([type, amt]) => `
+                  <div class="coin-chip ${COIN_META[type]?.class || ''} unique-coin" onmouseenter="showSpecialTooltip(event, 'moneda_${type}')" onmouseleave="hideTooltip()">
+                    <img src="${getMinecraftAssetUrl(COIN_META[type]?.mat)}" class="mc-pixelated" alt="${type}">
+                    <span class="coin-amount">+${amt}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Bonos de Isla -->
@@ -289,20 +368,20 @@ function renderCards(ranks) {
                 <span>🛡️ ${specialSet.name} + Arma</span>
               </div>
               <div class="set-pieces-slots">
-                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${specialSet.name.includes('Diamante') ? 'SenorDiamante' : specialSet.name.includes('Titan') ? 'TitanAbismo' : 'DeidadOneBlock'}_helmet')" onmouseleave="hideTooltip()">
+                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${setKey}_helmet')" onmouseleave="hideTooltip()">
                   <img src="${getMinecraftAssetUrl('netherite_helmet')}" class="mc-pixelated" alt="Helmet">
                 </div>
-                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${specialSet.name.includes('Diamante') ? 'SenorDiamante' : specialSet.name.includes('Titan') ? 'TitanAbismo' : 'DeidadOneBlock'}_chestplate')" onmouseleave="hideTooltip()">
+                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${setKey}_chestplate')" onmouseleave="hideTooltip()">
                   <img src="${getMinecraftAssetUrl('netherite_chestplate')}" class="mc-pixelated" alt="Chestplate">
                 </div>
-                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${specialSet.name.includes('Diamante') ? 'SenorDiamante' : specialSet.name.includes('Titan') ? 'TitanAbismo' : 'DeidadOneBlock'}_leggings')" onmouseleave="hideTooltip()">
+                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${setKey}_leggings')" onmouseleave="hideTooltip()">
                   <img src="${getMinecraftAssetUrl('netherite_leggings')}" class="mc-pixelated" alt="Leggings">
                 </div>
-                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${specialSet.name.includes('Diamante') ? 'SenorDiamante' : specialSet.name.includes('Titan') ? 'TitanAbismo' : 'DeidadOneBlock'}_boots')" onmouseleave="hideTooltip()">
+                <div class="mc-slot" onmouseenter="showSpecialTooltip(event, '${setKey}_boots')" onmouseleave="hideTooltip()">
                   <img src="${getMinecraftAssetUrl('netherite_boots')}" class="mc-pixelated" alt="Boots">
                 </div>
-                <div class="mc-slot" style="margin-left: 6px; background-color: #553311;" onmouseenter="showSpecialTooltip(event, '${specialSet.name.includes('Diamante') ? 'SenorDiamante' : specialSet.name.includes('Titan') ? 'TitanAbismo' : 'DeidadOneBlock'}_weapon')" onmouseleave="hideTooltip()">
-                  <img src="${getMinecraftAssetUrl(specialSet.weapon.includes('Arco') ? 'bow' : specialSet.weapon.includes('Espada') ? 'netherite_sword' : 'netherite_axe')}" class="mc-pixelated" alt="Weapon">
+                <div class="mc-slot" style="margin-left: 6px; background-color: #553311;" onmouseenter="showSpecialTooltip(event, '${setKey}_weapon')" onmouseleave="hideTooltip()">
+                  <img src="${getMinecraftAssetUrl(weaponIcon)}" class="mc-pixelated" alt="Weapon">
                 </div>
               </div>
             </div>
@@ -370,7 +449,11 @@ function applyFilters() {
       const matchKey = rank.key.toLowerCase().includes(q);
       const matchItems = rank.requirements.items.some(i => i.material.toLowerCase().includes(q));
       const matchConds = rank.requirements.conditions.some(c => c.label.toLowerCase().includes(q));
-      if (!matchName && !matchKey && !matchItems && !matchConds) return false;
+      const matchCoins = (rank.coins?.daily && Object.keys(rank.coins.daily).some(k => k.includes(q))) ||
+                         (rank.coins?.unique && Object.keys(rank.coins.unique).some(k => k.includes(q))) ||
+                         (['moneda', 'monedas', 'cobre', 'oro', 'diamante', 'netherita', 'netherite'].some(k => k.includes(q)));
+      const matchBeneficies = rank.rewards.unique?.beneficies && rank.rewards.unique.beneficies.some(b => b.toLowerCase().includes(q));
+      if (!matchName && !matchKey && !matchItems && !matchConds && !matchCoins && !matchBeneficies) return false;
     }
 
     return true;

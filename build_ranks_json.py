@@ -102,21 +102,21 @@ for i in range(1, len(rank_blocks), 2):
     has_set = None
     if weight == 10:
         has_set = {
-            "name": "Set Señor del Diamante",
+            "name": "Set Señores del Diamante",
             "weapon": "Arco del Señor del Diamante",
             "material": "NETHERITE",
             "type": "Bow + Armor Set"
         }
     elif weight == 20:
         has_set = {
-            "name": "Set Titán del Abismo",
+            "name": "Set Titanes del Abismo",
             "weapon": "Filo del Titán Abisal",
             "material": "NETHERITE",
             "type": "Sword + Armor Set"
         }
     elif weight == 30:
         has_set = {
-            "name": "Set Deidad del OneBlock",
+            "name": "Set Deidades del OneBlock",
             "weapon": "Hacha de la Deidad",
             "material": "NETHERITE",
             "type": "Axe + Armor Set"
@@ -136,6 +136,17 @@ for i in range(1, len(rank_blocks), 2):
         era = "Era IV: Deidad Suprema"
         era_id = 4
         
+    def extract_coins(cmds):
+        coins = {}
+        for cmd in cmds:
+            m = re.search(r"mm items give -d %player% moneda_([a-z]+) (\d+)", cmd)
+            if m:
+                coins[m.group(1)] = int(m.group(2))
+        return coins
+
+    daily_coins = extract_coins(daily_cmds)
+    unique_coins = extract_coins(unique_cmds)
+
     ranks.append({
         "key": r_key,
         "weight": weight,
@@ -152,6 +163,10 @@ for i in range(1, len(rank_blocks), 2):
             "conditions": parsed_conditions
         },
         "islandBonuses": bonuses,
+        "coins": {
+            "daily": daily_coins,
+            "unique": unique_coins
+        },
         "rewards": {
             "daily": {
                 "commands": daily_cmds,
@@ -175,8 +190,13 @@ for i in range(1, len(rank_blocks), 2):
 
 ranks.sort(key=lambda x: x["weight"])
 
-out_path = "/Users/alain/Projects/islandranks-web/ranks.json"
-with open(out_path, "w", encoding="utf-8") as f:
-    json.dump({"ranks": ranks, "total": len(ranks)}, f, indent=2, ensure_ascii=False)
+out_json = "/Users/alain/Projects/islandranks-web/ranks.json"
+data_payload = {"ranks": ranks, "total": len(ranks)}
+with open(out_json, "w", encoding="utf-8") as f:
+    json.dump(data_payload, f, indent=2, ensure_ascii=False)
 
-print(f"Successfully generated {out_path} with {len(ranks)} ranks!")
+out_js = "/Users/alain/Projects/islandranks-web/ranks-data.js"
+with open(out_js, "w", encoding="utf-8") as f:
+    f.write("window.RANKS_DATA = " + json.dumps(data_payload, ensure_ascii=False) + ";\n")
+
+print(f"Successfully generated {out_json} and {out_js} with {len(ranks)} ranks!")

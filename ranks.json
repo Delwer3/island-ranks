@@ -3,13 +3,13 @@
     {
       "key": "uno",
       "weight": 1,
-      "name": "Naufrago del Vacio",
-      "colorName": "&7Naufrago del Vacio",
+      "name": "Naufragos del Vacio",
+      "colorName": "&7Naufragos del Vacio",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 50000,
-        "xp": 25,
+        "xp": 10,
         "mobKills": 50,
         "playerKills": 0,
         "items": [
@@ -43,13 +43,23 @@
         "warps-limit": 2,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 2
+        },
+        "unique": {
+          "cobre": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 2",
             "eco give %player% 500",
             "give %player% bread 8"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &62x Cobre",
             "&eObtienes $500 y 8 Panes"
           ]
         },
@@ -74,11 +84,13 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 4",
             "eco give %player% 50000",
             "give %player% iron_ingot 32",
             "exp give %player% 500"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &64x Cobre",
             "&6Recompensa Única: &e$50,000, 32 Lingotes de Hierro y 500 EXP"
           ],
           "specialSet": null
@@ -88,13 +100,13 @@
     {
       "key": "dos",
       "weight": 2,
-      "name": "Sembrador de Eter",
-      "colorName": "&aSembrador de Eter",
+      "name": "Sembradores de Eter",
+      "colorName": "&aSembradores de Eter",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 120000,
-        "xp": 35,
+        "xp": 20,
         "mobKills": 100,
         "playerKills": 0,
         "items": [
@@ -133,14 +145,24 @@
         "warps-limit": 2,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 4
+        },
+        "unique": {
+          "cobre": 8
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 4",
             "eco give %player% 1000",
             "give %player% apple 12",
             "give %player% bone_meal 16"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &64x Cobre",
             "&eObtienes $1,000, 12 Manzanas y 16 Fertilizantes"
           ]
         },
@@ -165,11 +187,13 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 8",
             "eco give %player% 100000",
             "give %player% gold_ingot 32",
             "exp give %player% 1000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &68x Cobre",
             "&6Recompensa Única: &e$100,000, 32 Lingotes de Oro y 1,000 EXP"
           ],
           "specialSet": null
@@ -185,7 +209,7 @@
       "eraId": 1,
       "requirements": {
         "money": 250000,
-        "xp": 50,
+        "xp": 30,
         "mobKills": 200,
         "playerKills": 0,
         "items": [
@@ -219,14 +243,24 @@
         "warps-limit": 2,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 6
+        },
+        "unique": {
+          "cobre": 12
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 6",
             "eco give %player% 2000",
             "give %player% raw_iron 16",
             "give %player% coal 24"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &66x Cobre",
             "&eObtienes $2,000, 16 Hierro en bruto y 24 Carbon"
           ]
         },
@@ -251,11 +285,13 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 12",
             "eco give %player% 150000",
             "give %player% diamond 16",
             "exp give %player% 1500"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &612x Cobre",
             "&6Recompensa Única: &e$150,000, 16 Diamantes y 1,500 EXP"
           ],
           "specialSet": null
@@ -265,13 +301,13 @@
     {
       "key": "cuatro",
       "weight": 4,
-      "name": "Forjador de Islas",
-      "colorName": "&fForjador de Islas",
+      "name": "Forjadores de Islas",
+      "colorName": "&fForjadores de Islas",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 500000,
-        "xp": 65,
+        "xp": 40,
         "mobKills": 350,
         "playerKills": 0,
         "items": [
@@ -311,14 +347,24 @@
         "warps-limit": 3,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 8
+        },
+        "unique": {
+          "cobre": 16
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 8",
             "eco give %player% 4000",
             "give %player% iron_ingot 16",
             "give %player% gold_ingot 8"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &68x Cobre",
             "&eObtienes $4,000, 16 Lingotes de Hierro y 8 Lingotes de Oro"
           ]
         },
@@ -343,11 +389,13 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 16",
             "eco give %player% 200000",
             "give %player% diamond 24",
             "exp give %player% 2000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &616x Cobre",
             "&6Recompensa Única: &e$200,000, 24 Diamantes y 2,000 EXP"
           ],
           "specialSet": null
@@ -357,13 +405,13 @@
     {
       "key": "cinco",
       "weight": 5,
-      "name": "Pionero Flotante",
-      "colorName": "&b✦ Pionero Flotante",
+      "name": "Pioneros Flotantes",
+      "colorName": "&b✦ Pioneros Flotantes",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 1000000,
-        "xp": 80,
+        "xp": 50,
         "mobKills": 500,
         "playerKills": 0,
         "items": [
@@ -415,14 +463,27 @@
         "HASTE": 1,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 10,
+          "oro": 1
+        },
+        "unique": {
+          "cobre": 20,
+          "oro": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 10",
+            "mm items give -d %player% moneda_oro 1",
             "eco give %player% 8000",
             "give %player% diamond 4",
             "give %player% gold_ingot 16"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &610x Cobre, &e1x Oro",
             "&eObtienes $8,000, 4 Diamantes y 16 Lingotes de Oro"
           ]
         },
@@ -448,12 +509,15 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 20",
+            "mm items give -d %player% moneda_oro 2",
             "eco give %player% 300000",
             "give %player% diamond 32",
             "phoenixc giveKey Oneblock_Usuario %player% 1",
             "exp give %player% 2500"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &620x Cobre, &e2x Oro",
             "&6Recompensa Única: &e$300,000, 32 Diamantes, 1x Llave Usuario y 2,500 EXP"
           ],
           "specialSet": null
@@ -463,13 +527,13 @@
     {
       "key": "seis",
       "weight": 6,
-      "name": "Alquimista Celestico",
-      "colorName": "&3Alquimista Celestico",
+      "name": "Alquimistas Celesticos",
+      "colorName": "&3Alquimistas Celesticos",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 1800000,
-        "xp": 100,
+        "xp": 65,
         "mobKills": 750,
         "playerKills": 1,
         "items": [
@@ -511,14 +575,27 @@
         "REGENERATION": 1,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 12,
+          "oro": 2
+        },
+        "unique": {
+          "cobre": 24,
+          "oro": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 12",
+            "mm items give -d %player% moneda_oro 2",
             "eco give %player% 12000",
             "give %player% blaze_rod 8",
             "give %player% ghast_tear 2"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &612x Cobre, &e2x Oro",
             "&eObtienes $12,000, 8 Varas de Blaze y 2 Lagrimas de Ghast"
           ]
         },
@@ -543,12 +620,15 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 24",
+            "mm items give -d %player% moneda_oro 4",
             "eco give %player% 450000",
             "give %player% diamond 48",
             "phoenixc giveKey Oneblock_Usuario %player% 1",
             "exp give %player% 3000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &624x Cobre, &e4x Oro",
             "&6Recompensa Única: &e$450,000, 48 Diamantes, 1x Llave Usuario y 3,000 EXP"
           ],
           "specialSet": null
@@ -558,13 +638,13 @@
     {
       "key": "siete",
       "weight": 7,
-      "name": "Cantero de las Alturas",
-      "colorName": "&9Cantero de las Alturas",
+      "name": "Canteros de las Alturas",
+      "colorName": "&9Canteros de las Alturas",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 2800000,
-        "xp": 120,
+        "xp": 80,
         "mobKills": 1000,
         "playerKills": 2,
         "items": [
@@ -605,14 +685,27 @@
         "warps-limit": 3,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 16,
+          "oro": 3
+        },
+        "unique": {
+          "cobre": 32,
+          "oro": 6
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 16",
+            "mm items give -d %player% moneda_oro 3",
             "eco give %player% 16000",
             "give %player% lapis_block 16",
             "give %player% gold_block 8"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &616x Cobre, &e3x Oro",
             "&eObtienes $16,000, 16 Bloques de Lapis y 8 Bloques de Oro"
           ]
         },
@@ -637,12 +730,15 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 32",
+            "mm items give -d %player% moneda_oro 6",
             "eco give %player% 600000",
             "give %player% diamond_block 8",
             "phoenixc giveKey Oneblock_Usuario %player% 2",
             "exp give %player% 3500"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &632x Cobre, &e6x Oro",
             "&6Recompensa Única: &e$600,000, 8 Bloques de Diamante, 2x Llave Usuario y 3,500 EXP"
           ],
           "specialSet": null
@@ -652,13 +748,13 @@
     {
       "key": "ocho",
       "weight": 8,
-      "name": "Ingeniero de Corrientes",
-      "colorName": "&1Ingeniero de Corrientes",
+      "name": "Ingenieros de Corrientes",
+      "colorName": "&1Ingenieros de Corrientes",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 4000000,
-        "xp": 140,
+        "xp": 100,
         "mobKills": 1300,
         "playerKills": 3,
         "items": [
@@ -704,14 +800,27 @@
         "warps-limit": 4,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 20,
+          "oro": 4
+        },
+        "unique": {
+          "cobre": 40,
+          "oro": 8
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 20",
+            "mm items give -d %player% moneda_oro 4",
             "eco give %player% 20000",
             "give %player% redstone_block 16",
             "give %player% hopper 4"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &620x Cobre, &e4x Oro",
             "&eObtienes $20,000, 16 Bloques de Redstone y 4 Tolvas"
           ]
         },
@@ -736,12 +845,15 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 40",
+            "mm items give -d %player% moneda_oro 8",
             "eco give %player% 800000",
             "give %player% diamond_block 16",
             "phoenixc giveKey Oneblock_Usuario %player% 2",
             "exp give %player% 4000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &640x Cobre, &e8x Oro",
             "&6Recompensa Única: &e$800,000, 16 Bloques de Diamante, 2x Llave Usuario y 4,000 EXP"
           ],
           "specialSet": null
@@ -751,13 +863,13 @@
     {
       "key": "nueve",
       "weight": 9,
-      "name": "Centinela del Bloque",
-      "colorName": "&5Centinela del Bloque",
+      "name": "Centinelas del Bloque",
+      "colorName": "&5Centinelas del Bloque",
       "era": "Era I: Inicial",
       "eraId": 1,
       "requirements": {
         "money": 5500000,
-        "xp": 160,
+        "xp": 115,
         "mobKills": 1700,
         "playerKills": 4,
         "items": [
@@ -805,14 +917,27 @@
         "INCREASE_DAMAGE": 1,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 24,
+          "oro": 6
+        },
+        "unique": {
+          "cobre": 48,
+          "oro": 12
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 24",
+            "mm items give -d %player% moneda_oro 6",
             "eco give %player% 25000",
             "give %player% golden_apple 16",
             "give %player% arrow 64"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &624x Cobre, &e6x Oro",
             "&eObtienes $25,000, 16 Manzanas Doradas y 64 Flechas"
           ]
         },
@@ -837,13 +962,16 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 48",
+            "mm items give -d %player% moneda_oro 12",
             "eco give %player% 1000000",
             "give %player% diamond_block 24",
-            "phoenixc giveKey Oneblock_Elite %player% 1",
+            "phoenixc giveKey Oneblock_Dextra %player% 1",
             "exp give %player% 5000"
           ],
           "beneficies": [
-            "&6Recompensa Única: &e$1,000,000, 24 Bloques de Diamante, 1x Llave Elite y 5,000 EXP"
+            "&6🪙 Monedas de Ascenso: &648x Cobre, &e12x Oro",
+            "&6Recompensa Única: &e$1,000,000, 24 Bloques de Diamante, 1x Llave Dextra y 5,000 EXP"
           ],
           "specialSet": null
         }
@@ -852,13 +980,13 @@
     {
       "key": "diez",
       "weight": 10,
-      "name": "Senor del Diamante",
-      "colorName": "&b✦ Senor del Diamante",
+      "name": "Senores del Diamante",
+      "colorName": "&b✦ Senores del Diamante",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 7500000,
-        "xp": 190,
+        "xp": 140,
         "mobKills": 2200,
         "playerKills": 5,
         "items": [
@@ -909,14 +1037,30 @@
         "warps-limit": 4,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 28,
+          "oro": 8,
+          "diamante": 1
+        },
+        "unique": {
+          "cobre": 56,
+          "oro": 16,
+          "diamante": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 28",
+            "mm items give -d %player% moneda_oro 8",
+            "mm items give -d %player% moneda_diamante 1",
             "eco give %player% 30000",
             "give %player% diamond_block 4",
             "mm items give -d %player% fragmento_oro 4"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &628x Cobre, &e8x Oro, &b1x Diamante",
             "&eObtienes $30,000, 4 Bloques de Diamante y 4 Fragmentos de Oro"
           ]
         },
@@ -943,6 +1087,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 56",
+            "mm items give -d %player% moneda_oro 16",
+            "mm items give -d %player% moneda_diamante 2",
             "eco give %player% 2500000",
             "asets give %player% SenorDiamante",
             "asets weapon %player% SenorDiamante",
@@ -952,14 +1099,15 @@
             "exp give %player% 100L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &656x Cobre, &e16x Oro, &b2x Diamante",
             "&b&l✦ HITO ERA II - SEÑOR DEL DIAMANTE ✦",
             "&f• &bFull Set de Netherite: &lSeñor del Diamante &7(Resistencia I + Prisa II)",
-            "&f• &bArma Exclusiva: &lArco del Señor del Diamante &7(+25% Daño Proyectil)",
+            "&f• &bArma Exclusiva: &lArco del Señor del Diamante &7(+15% Daño Proyectil)",
             "&f• &e$2,500,000 en Efectivo &7+ &b100 Niveles de Experiencia",
             "&f• &d2x Llaves Dextra &7+ &b32 Bloques de Diamante &7+ &84 Lingotes Netherita"
           ],
           "specialSet": {
-            "name": "Set Señor del Diamante",
+            "name": "Set Señores del Diamante",
             "weapon": "Arco del Señor del Diamante",
             "material": "NETHERITE",
             "type": "Bow + Armor Set"
@@ -970,13 +1118,13 @@
     {
       "key": "once",
       "weight": 11,
-      "name": "Viajero de la Bruma",
-      "colorName": "&cViajero de la Bruma",
+      "name": "Viajeros de la Bruma",
+      "colorName": "&cViajeros de la Bruma",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 11000000,
-        "xp": 220,
+        "xp": 160,
         "mobKills": 2800,
         "playerKills": 6,
         "items": [
@@ -1017,14 +1165,30 @@
         "warps-limit": 4,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 32,
+          "oro": 10,
+          "diamante": 1
+        },
+        "unique": {
+          "cobre": 64,
+          "oro": 20,
+          "diamante": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 32",
+            "mm items give -d %player% moneda_oro 10",
+            "mm items give -d %player% moneda_diamante 1",
             "eco give %player% 40000",
             "give %player% quartz_block 16",
             "give %player% magma_block 16"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &632x Cobre, &e10x Oro, &b1x Diamante",
             "&eObtienes $40,000, 16 Bloques de Cuarzo y 16 Bloques de Magma"
           ]
         },
@@ -1049,14 +1213,18 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 20",
+            "mm items give -d %player% moneda_diamante 2",
             "eco give %player% 2000000",
             "give %player% diamond_block 48",
             "give %player% netherite_ingot 4",
-            "phoenixc giveKey Oneblock_Elite %player% 2",
+            "phoenixc giveKey Oneblock_Dextra %player% 2",
             "exp give %player% 7000"
           ],
           "beneficies": [
-            "&6Recompensa Única: &e$2,000,000, 48 Bloques de Diamante, 4 Lingotes Netherita, 2x Llave Elite y 7,000 EXP"
+            "&6🪙 Monedas de Ascenso: &664x Cobre, &e20x Oro, &b2x Diamante",
+            "&6Recompensa Única: &e$2,000,000, 48 Bloques de Diamante, 4 Lingotes Netherita, 2x Llaves Dextra y 7,000 EXP"
           ],
           "specialSet": null
         }
@@ -1065,13 +1233,13 @@
     {
       "key": "doce",
       "weight": 12,
-      "name": "Inquisidor de Magma",
-      "colorName": "&4Inquisidor de Magma",
+      "name": "Inquisidores de Magma",
+      "colorName": "&4Inquisidores de Magma",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 16000000,
-        "xp": 250,
+        "xp": 190,
         "mobKills": 3500,
         "playerKills": 7,
         "items": [
@@ -1112,14 +1280,30 @@
         "warps-limit": 4,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 36,
+          "oro": 12,
+          "diamante": 2
+        },
+        "unique": {
+          "cobre": 72,
+          "oro": 24,
+          "diamante": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 36",
+            "mm items give -d %player% moneda_oro 12",
+            "mm items give -d %player% moneda_diamante 2",
             "eco give %player% 50000",
             "give %player% ghast_tear 4",
             "give %player% blaze_rod 16"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &636x Cobre, &e12x Oro, &b2x Diamante",
             "&eObtienes $50,000, 4 Lagrimas de Ghast y 16 Varas de Blaze"
           ]
         },
@@ -1144,14 +1328,18 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 72",
+            "mm items give -d %player% moneda_oro 24",
+            "mm items give -d %player% moneda_diamante 4",
             "eco give %player% 2500000",
             "give %player% diamond_block 64",
             "give %player% netherite_ingot 6",
-            "phoenixc giveKey Oneblock_Elite %player% 3",
+            "phoenixc giveKey Oneblock_Dextra %player% 3",
             "exp give %player% 8000"
           ],
           "beneficies": [
-            "&6Recompensa Única: &e$2,500,000, 64 Bloques de Diamante, 6 Lingotes Netherita, 3x Llave Elite y 8,000 EXP"
+            "&6🪙 Monedas de Ascenso: &672x Cobre, &e24x Oro, &b4x Diamante",
+            "&6Recompensa Única: &e$2,500,000, 64 Bloques de Diamante, 6 Lingotes Netherita, 3x Llaves Dextra y 8,000 EXP"
           ],
           "specialSet": null
         }
@@ -1160,13 +1348,13 @@
     {
       "key": "trece",
       "weight": 13,
-      "name": "Devorador de Obsidiana",
-      "colorName": "&8Devorador de Obsidiana",
+      "name": "Devoradores de Obsidiana",
+      "colorName": "&8Devoradores de Obsidiana",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 22000000,
-        "xp": 280,
+        "xp": 210,
         "mobKills": 4200,
         "playerKills": 8,
         "items": [
@@ -1214,14 +1402,30 @@
         "DAMAGE_RESISTANCE": 1,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 40,
+          "oro": 14,
+          "diamante": 2
+        },
+        "unique": {
+          "cobre": 80,
+          "oro": 28,
+          "diamante": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 40",
+            "mm items give -d %player% moneda_oro 14",
+            "mm items give -d %player% moneda_diamante 2",
             "eco give %player% 65000",
             "give %player% obsidian 32",
             "give %player% netherite_scrap 2"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &640x Cobre, &e14x Oro, &b2x Diamante",
             "&eObtienes $65,000, 32 Obsidiana y 2 Fragmentos de Netherita"
           ]
         },
@@ -1246,13 +1450,17 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 80",
+            "mm items give -d %player% moneda_oro 28",
+            "mm items give -d %player% moneda_diamante 4",
             "eco give %player% 3000000",
             "give %player% netherite_block 1",
-            "phoenixc giveKey Oneblock_Elite %player% 3",
+            "phoenixc giveKey Oneblock_DexParty %player% 2",
             "exp give %player% 9000"
           ],
           "beneficies": [
-            "&6Recompensa Única: &e$3,000,000, 1 Bloque de Netherita, 3x Llave Elite y 9,000 EXP"
+            "&6🪙 Monedas de Ascenso: &680x Cobre, &e28x Oro, &b4x Diamante",
+            "&6Recompensa Única: &e$3,000,000, 1 Bloque de Netherita, 2x Llaves DexParty y 9,000 EXP"
           ],
           "specialSet": null
         }
@@ -1261,13 +1469,13 @@
     {
       "key": "catorce",
       "weight": 14,
-      "name": "Artifice Igneo",
-      "colorName": "&6Artifice Igneo",
+      "name": "Artifices Igneos",
+      "colorName": "&6Artifices Igneos",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 29000000,
-        "xp": 310,
+        "xp": 240,
         "mobKills": 5000,
         "playerKills": 9,
         "items": [
@@ -1313,14 +1521,30 @@
         "warps-limit": 5,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 44,
+          "oro": 16,
+          "diamante": 3
+        },
+        "unique": {
+          "cobre": 88,
+          "oro": 32,
+          "diamante": 6
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 44",
+            "mm items give -d %player% moneda_oro 16",
+            "mm items give -d %player% moneda_diamante 3",
             "eco give %player% 80000",
             "give %player% ancient_debris 2",
             "give %player% netherite_ingot 1"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &644x Cobre, &e16x Oro, &b3x Diamante",
             "&eObtienes $80,000, 2 Escombros Ancestrales y 1 Lingote de Netherita"
           ]
         },
@@ -1346,12 +1570,16 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 88",
+            "mm items give -d %player% moneda_oro 32",
+            "mm items give -d %player% moneda_diamante 6",
             "eco give %player% 3500000",
             "give %player% netherite_block 2",
             "phoenixc giveKey Oneblock_Vulcano %player% 1",
             "exp give %player% 10000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &688x Cobre, &e32x Oro, &b6x Diamante",
             "&6Recompensa Única: &e$3,500,000, 2 Bloques de Netherita, 1x Llave Vulcano y 10,000 EXP"
           ],
           "specialSet": null
@@ -1361,13 +1589,13 @@
     {
       "key": "quince",
       "weight": 15,
-      "name": "Heraldo de Vulcanis",
-      "colorName": "&c✦ Heraldo de Vulcanis",
+      "name": "Heraldos de Vulcanis",
+      "colorName": "&c✦ Heraldos de Vulcanis",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 37000000,
-        "xp": 350,
+        "xp": 270,
         "mobKills": 6000,
         "playerKills": 10,
         "items": [
@@ -1420,14 +1648,30 @@
         "FIRE_RESISTANCE": 1,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 48,
+          "oro": 20,
+          "diamante": 3
+        },
+        "unique": {
+          "cobre": 96,
+          "oro": 40,
+          "diamante": 6
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 48",
+            "mm items give -d %player% moneda_oro 20",
+            "mm items give -d %player% moneda_diamante 3",
             "eco give %player% 100000",
             "give %player% netherite_ingot 2",
             "give %player% diamond_block 8"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &648x Cobre, &e20x Oro, &b3x Diamante",
             "&eObtienes $100,000, 2 Lingotes de Netherita y 8 Bloques de Diamante"
           ]
         },
@@ -1455,6 +1699,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 96",
+            "mm items give -d %player% moneda_oro 40",
+            "mm items give -d %player% moneda_diamante 6",
             "eco give %player% 4500000",
             "give %player% netherite_block 3",
             "give %player% beacon 1",
@@ -1462,6 +1709,7 @@
             "exp give %player% 12000"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &696x Cobre, &e40x Oro, &b6x Diamante",
             "&6Recompensa Única: &e$4,500,000, 3 Bloques de Netherita, 1x Faro, 1x Llave Vulcano y 12,000 EXP"
           ],
           "specialSet": null
@@ -1471,13 +1719,13 @@
     {
       "key": "dieciseis",
       "weight": 16,
-      "name": "Cazador del Abismo",
-      "colorName": "&8Cazador del Abismo",
+      "name": "Cazadores del Abismo",
+      "colorName": "&8Cazadores del Abismo",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 48000000,
-        "xp": 390,
+        "xp": 300,
         "mobKills": 7000,
         "playerKills": 11,
         "items": [
@@ -1488,7 +1736,7 @@
           },
           {
             "type": "vanillaitem",
-            "material": "AMETHYST_BLOCK",
+            "material": "CRYING_OBSIDIAN",
             "amount": 128
           },
           {
@@ -1523,15 +1771,31 @@
         "warps-limit": 5,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 52,
+          "oro": 24,
+          "diamante": 4
+        },
+        "unique": {
+          "cobre": 104,
+          "oro": 48,
+          "diamante": 8
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 52",
+            "mm items give -d %player% moneda_oro 24",
+            "mm items give -d %player% moneda_diamante 4",
             "eco give %player% 120000",
             "give %player% chorus_fruit 32",
-            "give %player% amethyst_shard 16"
+            "give %player% crying_obsidian 8"
           ],
           "beneficies": [
-            "&eObtienes $120,000, 32 Frutas de Chorus y 16 Amatistas"
+            "&6🪙 Monedas Diarias: &652x Cobre, &e24x Oro, &b4x Diamante",
+            "&eObtienes $120,000, 32 Frutas de Chorus y 8 Obsidiana Llorosa"
           ]
         },
         "weekly": {
@@ -1556,6 +1820,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 104",
+            "mm items give -d %player% moneda_oro 48",
+            "mm items give -d %player% moneda_diamante 8",
             "eco give %player% 4000000",
             "phoenixc giveKey Oneblock_Dextra %player% 2",
             "phoenixc giveKey Oneblock_KOTH %player% 2",
@@ -1580,6 +1847,7 @@
             "exp give %player% 300L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6104x Cobre, &e48x Oro, &b8x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: INICIACIÓN ENDGAME ✦",
             "&f• &e$4,000,000 en Efectivo &7+ &b300 Niveles de EXP",
             "&f• &a2x Llaves Dextra&7, &c2x KOTH &7y &62x Vulcano",
@@ -1595,30 +1863,30 @@
     {
       "key": "diecisiete",
       "weight": 17,
-      "name": "Recolector de Ecos",
-      "colorName": "&3Recolector de Ecos",
+      "name": "Recolectores de Ecos",
+      "colorName": "&3Recolectores de Ecos",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 60000000,
-        "xp": 430,
+        "xp": 330,
         "mobKills": 8200,
         "playerKills": 12,
         "items": [
           {
             "type": "vanillaitem",
-            "material": "SCULK_CATALYST",
+            "material": "TERRACOTTA",
+            "amount": 512
+          },
+          {
+            "type": "vanillaitem",
+            "material": "RED_SAND",
+            "amount": 512
+          },
+          {
+            "type": "vanillaitem",
+            "material": "GOLD_BLOCK",
             "amount": 128
-          },
-          {
-            "type": "vanillaitem",
-            "material": "CALIBRATED_SCULK_SENSOR",
-            "amount": 32
-          },
-          {
-            "type": "vanillaitem",
-            "material": "SCULK",
-            "amount": 256
           }
         ],
         "conditions": [
@@ -1647,15 +1915,31 @@
         "warps-limit": 5,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 56,
+          "oro": 28,
+          "diamante": 4
+        },
+        "unique": {
+          "cobre": 112,
+          "oro": 56,
+          "diamante": 8
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 56",
+            "mm items give -d %player% moneda_oro 28",
+            "mm items give -d %player% moneda_diamante 4",
             "eco give %player% 140000",
-            "give %player% echo_shard 4",
-            "give %player% sculk_catalyst 2"
+            "give %player% gold_block 4",
+            "give %player% terracotta 32"
           ],
           "beneficies": [
-            "&eObtienes $140,000, 4 Fragmentos de Eco y 2 Catalizadores"
+            "&6🪙 Monedas Diarias: &656x Cobre, &e28x Oro, &b4x Diamante",
+            "&eObtienes $140,000, 4 Bloques de Oro y 32 Terracota"
           ]
         },
         "weekly": {
@@ -1663,10 +1947,10 @@
             "eco give %player% 2400000",
             "ae givercbook ETERNO %player% 1",
             "phoenixc giveKey Oneblock_Dextra %player% 2",
-            "give %player% echo_shard 16"
+            "give %player% gold_block 16"
           ],
           "beneficies": [
-            "&eObtienes $2,400,000, 1x Runa Eterno, 2x Llaves Dextra y 16 Fragmentos Eco"
+            "&eObtienes $2,400,000, 1x Runa Eterno, 2x Llaves Dextra y 16 Bloques de Oro"
           ]
         },
         "monthly": {
@@ -1680,6 +1964,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 112",
+            "mm items give -d %player% moneda_oro 56",
+            "mm items give -d %player% moneda_diamante 8",
             "eco give %player% 5000000",
             "phoenixc giveKey Oneblock_Dextra %player% 3",
             "phoenixc giveKey Oneblock_KOTH %player% 2",
@@ -1704,6 +1991,7 @@
             "exp give %player% 350L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6112x Cobre, &e56x Oro, &b8x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: PODER ARCANO ✦",
             "&f• &e$5,000,000 en Efectivo &7+ &b350 Niveles de EXP",
             "&f• &a3x Llaves Dextra&7, &c2x KOTH &7y &d1x DexParty",
@@ -1719,13 +2007,13 @@
     {
       "key": "dieciocho",
       "weight": 18,
-      "name": "Senor del Chorus",
-      "colorName": "&dSenor del Chorus",
+      "name": "Senores del Chorus",
+      "colorName": "&dSenores del Chorus",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 75000000,
-        "xp": 470,
+        "xp": 370,
         "mobKills": 9500,
         "playerKills": 13,
         "items": [
@@ -1771,14 +2059,30 @@
         "warps-limit": 5,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 60,
+          "oro": 32,
+          "diamante": 5
+        },
+        "unique": {
+          "cobre": 120,
+          "oro": 64,
+          "diamante": 10
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 60",
+            "mm items give -d %player% moneda_oro 32",
+            "mm items give -d %player% moneda_diamante 5",
             "eco give %player% 160000",
             "give %player% shulker_box 1",
             "give %player% purpur_block 32"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &660x Cobre, &e32x Oro, &b5x Diamante",
             "&eObtienes $160,000, 1 Caja Shulker y 32 Bloques Purpur"
           ]
         },
@@ -1803,6 +2107,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 120",
+            "mm items give -d %player% moneda_oro 64",
+            "mm items give -d %player% moneda_diamante 10",
             "eco give %player% 6000000",
             "phoenixc giveKey Oneblock_Dextra %player% 3",
             "phoenixc giveKey Oneblock_KOTH %player% 3",
@@ -1828,6 +2135,7 @@
             "exp give %player% 400L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6120x Cobre, &e64x Oro, &b10x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: REFUERZO MÁGICO ✦",
             "&f• &e$6,000,000 en Efectivo &7+ &b400 Niveles de EXP",
             "&f• &a3x Llaves Dextra&7, &c3x KOTH &7y &d2x DexParty",
@@ -1844,13 +2152,13 @@
     {
       "key": "diecinueve",
       "weight": 19,
-      "name": "Vanguardia de Morkess",
-      "colorName": "&5Vanguardia de Morkess",
+      "name": "Vanguardias de Morkess",
+      "colorName": "&5Vanguardias de Morkess",
       "era": "Era II: Diamante y Arcano",
       "eraId": 2,
       "requirements": {
         "money": 92000000,
-        "xp": 520,
+        "xp": 400,
         "mobKills": 11000,
         "playerKills": 14,
         "items": [
@@ -1896,14 +2204,30 @@
         "warps-limit": 5,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 36,
+          "diamante": 6
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 72,
+          "diamante": 12
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 36",
+            "mm items give -d %player% moneda_diamante 6",
             "eco give %player% 180000",
             "give %player% netherite_block 1",
             "give %player% diamond_block 8"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e36x Oro, &b6x Diamante",
             "&eObtienes $180,000, 1 Bloque de Netherita y 8 Bloques de Diamante"
           ]
         },
@@ -1928,6 +2252,9 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 72",
+            "mm items give -d %player% moneda_diamante 12",
             "eco give %player% 7500000",
             "phoenixc giveKey Oneblock_Dextra %player% 4",
             "phoenixc giveKey Oneblock_KOTH %player% 3",
@@ -1953,6 +2280,7 @@
             "exp give %player% 450L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e72x Oro, &b12x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: EXPANSIÓN DE ALMAS ✦",
             "&f• &e$7,500,000 en Efectivo &7+ &b450 Niveles de EXP",
             "&f• &a4x Llaves Dextra&7, &c3x KOTH &7y &d2x DexParty",
@@ -1968,13 +2296,13 @@
     {
       "key": "veinte",
       "weight": 20,
-      "name": "Titan del Abismo",
-      "colorName": "&8✦ Titan del Abismo",
+      "name": "Titanes del Abismo",
+      "colorName": "&8✦ Titanes del Abismo",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 115000000,
-        "xp": 580,
+        "xp": 460,
         "mobKills": 13000,
         "playerKills": 15,
         "items": [
@@ -2025,14 +2353,33 @@
         "warps-limit": 6,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 40,
+          "diamante": 6,
+          "netherite": 1
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 80,
+          "diamante": 12,
+          "netherite": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 40",
+            "mm items give -d %player% moneda_diamante 6",
+            "mm items give -d %player% moneda_netherite 1",
             "eco give %player% 200000",
             "give %player% netherite_block 2",
             "give %player% diamond_block 16"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e40x Oro, &b6x Diamante, &51x Netherita",
             "&eObtienes $200,000, 2 Bloques de Netherita y 16 Bloques de Diamante"
           ]
         },
@@ -2060,6 +2407,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 80",
+            "mm items give -d %player% moneda_diamante 12",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 10000000",
             "asets give %player% TitanAbismo",
             "asets weapon %player% TitanAbismo",
@@ -2088,6 +2439,7 @@
             "exp give %player% 500L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e80x Oro, &b12x Diamante, &52x Netherita",
             "&8&l✦ HITO ERA III - TITÁN DEL ABISMO ✦",
             "&f• &8Full Set de Netherite: &lTitán del Abismo &7(Resistencia II + Robo de Vida)",
             "&f• &8Arma Exclusiva: &lFilo del Titán Abisal &7(+20% Daño + Desangrado)",
@@ -2099,7 +2451,7 @@
             "&f• &55x Soul Gems de 1,000 Almas &8(5,000 Almas en total)"
           ],
           "specialSet": {
-            "name": "Set Titán del Abismo",
+            "name": "Set Titanes del Abismo",
             "weapon": "Filo del Titán Abisal",
             "material": "NETHERITE",
             "type": "Sword + Armor Set"
@@ -2110,13 +2462,13 @@
     {
       "key": "veintiuno",
       "weight": 21,
-      "name": "Caminante Astral",
-      "colorName": "&9Caminante Astral",
+      "name": "Caminantes Astrales",
+      "colorName": "&9Caminantes Astrales",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 140000000,
-        "xp": 640,
+        "xp": 500,
         "mobKills": 15500,
         "playerKills": 16,
         "items": [
@@ -2157,14 +2509,33 @@
         "warps-limit": 6,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 44,
+          "diamante": 7,
+          "netherite": 1
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 88,
+          "diamante": 14,
+          "netherite": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 44",
+            "mm items give -d %player% moneda_diamante 7",
+            "mm items give -d %player% moneda_netherite 1",
             "eco give %player% 230000",
             "give %player% end_rod 16",
             "give %player% netherite_block 2"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e44x Oro, &b7x Diamante, &51x Netherita",
             "&eObtienes $230,000, 16 Varas del End y 2 Bloques de Netherita"
           ]
         },
@@ -2189,6 +2560,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 88",
+            "mm items give -d %player% moneda_diamante 14",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 12000000",
             "phoenixc giveKey Oneblock_Dextra %player% 5",
             "phoenixc giveKey Oneblock_KOTH %player% 5",
@@ -2214,6 +2589,7 @@
             "exp give %player% 600L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e88x Oro, &b14x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: DOMINIO EXALTED ✦",
             "&f• &e$12,000,000 en Efectivo &7+ &b600 Niveles de EXP",
             "&f• &a5x Llaves Dextra&7, &c5x KOTH &7y &d4x DexParty",
@@ -2229,13 +2605,13 @@
     {
       "key": "veintidos",
       "weight": 22,
-      "name": "Nomada Estelar",
-      "colorName": "&bNomada Estelar",
+      "name": "Nomadas Estelares",
+      "colorName": "&bNomadas Estelares",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 170000000,
-        "xp": 700,
+        "xp": 560,
         "mobKills": 18000,
         "playerKills": 17,
         "items": [
@@ -2281,14 +2657,33 @@
         "warps-limit": 6,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 48,
+          "diamante": 7,
+          "netherite": 1
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 96,
+          "diamante": 14,
+          "netherite": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 48",
+            "mm items give -d %player% moneda_diamante 7",
+            "mm items give -d %player% moneda_netherite 1",
             "eco give %player% 260000",
             "give %player% end_crystal 4",
             "give %player% netherite_block 2"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e48x Oro, &b7x Diamante, &51x Netherita",
             "&eObtienes $260,000, 4 Cristales del End y 2 Bloques de Netherita"
           ]
         },
@@ -2313,6 +2708,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 96",
+            "mm items give -d %player% moneda_diamante 14",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 14000000",
             "phoenixc giveKey Oneblock_Dextra %player% 6",
             "phoenixc giveKey Oneblock_KOTH %player% 5",
@@ -2338,6 +2737,7 @@
             "exp give %player% 700L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e96x Oro, &b14x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: PURIFICACIÓN ✦",
             "&f• &e$14,000,000 en Efectivo &7+ &b700 Niveles de EXP",
             "&f• &a6x Llaves Dextra&7, &c5x KOTH &7y &d4x DexParty",
@@ -2353,13 +2753,13 @@
     {
       "key": "veintitres",
       "weight": 23,
-      "name": "Vencedor de Boreas",
-      "colorName": "&3Vencedor de Boreas",
+      "name": "Vencedores de Boreas",
+      "colorName": "&3Vencedores de Boreas",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 205000000,
-        "xp": 760,
+        "xp": 600,
         "mobKills": 21000,
         "playerKills": 18,
         "items": [
@@ -2405,14 +2805,33 @@
         "warps-limit": 6,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 52,
+          "diamante": 8,
+          "netherite": 1
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 104,
+          "diamante": 16,
+          "netherite": 2
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 52",
+            "mm items give -d %player% moneda_diamante 8",
+            "mm items give -d %player% moneda_netherite 1",
             "eco give %player% 290000",
             "give %player% blue_ice 32",
             "give %player% netherite_block 3"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e52x Oro, &b8x Diamante, &51x Netherita",
             "&eObtienes $290,000, 32 Hielo Azul y 3 Bloques de Netherita"
           ]
         },
@@ -2438,6 +2857,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 104",
+            "mm items give -d %player% moneda_diamante 16",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 16000000",
             "phoenixc giveKey Oneblock_Dextra %player% 6",
             "phoenixc giveKey Oneblock_KOTH %player% 6",
@@ -2464,6 +2887,7 @@
             "exp give %player% 800L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e104x Oro, &b16x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: FORJA CELESTIAL ✦",
             "&f• &e$16,000,000 en Efectivo &7+ &b800 Niveles de EXP",
             "&f• &a6x Llaves Dextra&7, &c6x KOTH &7y &d5x DexParty",
@@ -2480,13 +2904,13 @@
     {
       "key": "veinticuatro",
       "weight": 24,
-      "name": "Discipulo del Arquitecto",
-      "colorName": "&1Discipulo del Arquitecto",
+      "name": "Discipulos del Arquitecto",
+      "colorName": "&1Discipulos del Arquitecto",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 245000000,
-        "xp": 820,
+        "xp": 660,
         "mobKills": 24000,
         "playerKills": 19,
         "items": [
@@ -2532,14 +2956,33 @@
         "warps-limit": 6,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 56,
+          "diamante": 8,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 112,
+          "diamante": 16,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 56",
+            "mm items give -d %player% moneda_diamante 8",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 320000",
             "give %player% beacon 1",
             "give %player% netherite_block 3"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e56x Oro, &b8x Diamante, &52x Netherita",
             "&eObtienes $320,000, 1 Faro y 3 Bloques de Netherita"
           ]
         },
@@ -2564,6 +3007,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 112",
+            "mm items give -d %player% moneda_diamante 16",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 18000000",
             "phoenixc giveKey Oneblock_Dextra %player% 7",
             "phoenixc giveKey Oneblock_KOTH %player% 7",
@@ -2589,6 +3036,7 @@
             "exp give %player% 900L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e112x Oro, &b16x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: ALMAS INFINITAS ✦",
             "&f• &e$18,000,000 en Efectivo &7+ &b900 Niveles de EXP",
             "&f• &a7x Llaves Dextra&7, &c7x KOTH &7y &d6x DexParty",
@@ -2604,13 +3052,13 @@
     {
       "key": "veinticinco",
       "weight": 25,
-      "name": "Conquistador del Fin",
-      "colorName": "&5✦ Conquistador del Fin",
+      "name": "Conquistadores del Fin",
+      "colorName": "&5✦ Conquistadores del Fin",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 285000000,
-        "xp": 900,
+        "xp": 720,
         "mobKills": 28000,
         "playerKills": 20,
         "items": [
@@ -2661,14 +3109,33 @@
         "warps-limit": 7,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 60,
+          "diamante": 9,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 120,
+          "diamante": 18,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 60",
+            "mm items give -d %player% moneda_diamante 9",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 350000",
             "give %player% netherite_block 4",
             "give %player% beacon 2"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e60x Oro, &b9x Diamante, &52x Netherita",
             "&eObtienes $350,000, 4 Bloques de Netherita y 2 Faros"
           ]
         },
@@ -2696,6 +3163,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 120",
+            "mm items give -d %player% moneda_diamante 18",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 22000000",
             "phoenixc giveKey Oneblock_Dextra %player% 8",
             "phoenixc giveKey Oneblock_KOTH %player% 8",
@@ -2722,6 +3193,7 @@
             "exp give %player% 1000L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e120x Oro, &b18x Diamante, &54x Netherita",
             "&5&l✦ HITO ERA IV - CONQUISTADOR DEL FIN ✦",
             "&f• &e$22,000,000 en Efectivo &7+ &b1,000 Niveles de EXP",
             "&f• &a8x Llaves Dextra&7, &c8x KOTH &7y &d8x DexParty",
@@ -2738,13 +3210,13 @@
     {
       "key": "veintiseis",
       "weight": 26,
-      "name": "Senor de las Constelaciones",
-      "colorName": "&6Senor de las Constelaciones",
+      "name": "Senores de las Constelaciones",
+      "colorName": "&6Senores de las Constelaciones",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 315000000,
-        "xp": 980,
+        "xp": 780,
         "mobKills": 32000,
         "playerKills": 21,
         "items": [
@@ -2785,14 +3257,33 @@
         "warps-limit": 7,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 64,
+          "diamante": 10,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 128,
+          "diamante": 20,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 64",
+            "mm items give -d %player% moneda_diamante 10",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 380000",
             "give %player% netherite_block 5",
             "give %player% diamond_block 32"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e64x Oro, &b10x Diamante, &52x Netherita",
             "&eObtienes $380,000, 5 Bloques de Netherita y 32 Bloques de Diamante"
           ]
         },
@@ -2817,6 +3308,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 20",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 26000000",
             "phoenixc giveKey Oneblock_Dextra %player% 9",
             "phoenixc giveKey Oneblock_KOTH %player% 9",
@@ -2842,6 +3337,7 @@
             "exp give %player% 1200L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b20x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: DESPERTAR ABISAL ✦",
             "&f• &e$26,000,000 en Efectivo &7+ &b1,200 Niveles de EXP",
             "&f• &a9x Llaves Dextra&7, &c9x KOTH &7y &d10x DexParty",
@@ -2857,13 +3353,13 @@
     {
       "key": "veintisiete",
       "weight": 27,
-      "name": "Tributo a Aurelius",
-      "colorName": "&eTributo a Aurelius",
+      "name": "Tributos a Aurelius",
+      "colorName": "&eTributos a Aurelius",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 345000000,
-        "xp": 1050,
+        "xp": 840,
         "mobKills": 37000,
         "playerKills": 22,
         "items": [
@@ -2914,14 +3410,33 @@
         "warps-limit": 7,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 72,
+          "diamante": 10,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 128,
+          "diamante": 20,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 72",
+            "mm items give -d %player% moneda_diamante 10",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 410000",
             "give %player% enchanted_golden_apple 2",
             "give %player% netherite_block 5"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e72x Oro, &b10x Diamante, &52x Netherita",
             "&eObtienes $410,000, 2 Manzanas Notch y 5 Bloques de Netherita"
           ]
         },
@@ -2946,6 +3461,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 20",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 30000000",
             "phoenixc giveKey Oneblock_Dextra %player% 10",
             "phoenixc giveKey Oneblock_KOTH %player% 10",
@@ -2971,6 +3490,7 @@
             "exp give %player% 1500L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b20x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: PROTECCIÓN DIVINA ✦",
             "&f• &e$30,000,000 en Efectivo &7+ &b1,500 Niveles de EXP",
             "&f• &a10x Llaves Dextra&7, &c10x KOTH &7y &d12x DexParty",
@@ -2986,13 +3506,13 @@
     {
       "key": "veintiocho",
       "weight": 28,
-      "name": "Hacedor de Mundos",
-      "colorName": "&aHacedor de Mundos",
+      "name": "Hacedores de Mundos",
+      "colorName": "&aHacedores de Mundos",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 370000000,
-        "xp": 1150,
+        "xp": 920,
         "mobKills": 42000,
         "playerKills": 23,
         "items": [
@@ -3043,14 +3563,33 @@
         "warps-limit": 8,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 80,
+          "diamante": 11,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 128,
+          "diamante": 22,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 80",
+            "mm items give -d %player% moneda_diamante 11",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 440000",
             "give %player% netherite_block 6",
             "give %player% beacon 3"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e80x Oro, &b11x Diamante, &52x Netherita",
             "&eObtienes $440,000, 6 Bloques de Netherita y 3 Faros"
           ]
         },
@@ -3076,6 +3615,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 22",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 35000000",
             "phoenixc giveKey Oneblock_Dextra %player% 12",
             "phoenixc giveKey Oneblock_KOTH %player% 12",
@@ -3102,6 +3645,7 @@
             "exp give %player% 2000L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b22x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: MAESTRÍA DE SLOTS ✦",
             "&f• &e$35,000,000 en Efectivo &7+ &b2,000 Niveles de EXP",
             "&f• &a12x Llaves Dextra&7, &c12x KOTH &7y &d14x DexParty",
@@ -3118,13 +3662,13 @@
     {
       "key": "veintinueve",
       "weight": 29,
-      "name": "Omnisciente",
-      "colorName": "&bOmnisciente",
+      "name": "Omniscientes",
+      "colorName": "&bOmniscientes",
       "era": "Era III: Titán y Abismo",
       "eraId": 3,
       "requirements": {
         "money": 385000000,
-        "xp": 1250,
+        "xp": 1000,
         "mobKills": 48000,
         "playerKills": 24,
         "items": [
@@ -3175,14 +3719,33 @@
         "warps-limit": 8,
         "daily-commands": ""
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 96,
+          "diamante": 12,
+          "netherite": 2
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 128,
+          "diamante": 24,
+          "netherite": 4
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 96",
+            "mm items give -d %player% moneda_diamante 12",
+            "mm items give -d %player% moneda_netherite 2",
             "eco give %player% 470000",
             "give %player% netherite_block 8",
             "give %player% diamond_block 64"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e96x Oro, &b12x Diamante, &52x Netherita",
             "&eObtienes $470,000, 8 Bloques de Netherita y 64 Bloques de Diamante"
           ]
         },
@@ -3208,6 +3771,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 24",
+            "mm items give -d %player% moneda_netherite 4",
             "eco give %player% 40000000",
             "phoenixc giveKey Oneblock_Dextra %player% 14",
             "phoenixc giveKey Oneblock_KOTH %player% 14",
@@ -3233,6 +3800,7 @@
             "exp give %player% 2500L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b24x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: CÚSPIDE DE ONEBLOCK ✦",
             "&f• &e$40,000,000 en Efectivo &7+ &b2,500 Niveles de EXP",
             "&f• &a14x Llaves Dextra&7, &c14x KOTH &7y &d18x DexParty",
@@ -3248,13 +3816,13 @@
     {
       "key": "treinta",
       "weight": 30,
-      "name": "Deidad del OneBlock",
-      "colorName": "&d✧ Deidad del OneBlock",
+      "name": "Deidades del OneBlock",
+      "colorName": "&d✧ Deidades del OneBlock",
       "era": "Era IV: Deidad Suprema",
       "eraId": 4,
       "requirements": {
         "money": 400000000,
-        "xp": 1500,
+        "xp": 3000,
         "mobKills": 55000,
         "playerKills": 25,
         "items": [
@@ -3316,14 +3884,33 @@
         "potion-effects": "",
         "SPEED": 1
       },
+      "coins": {
+        "daily": {
+          "cobre": 64,
+          "oro": 128,
+          "diamante": 16,
+          "netherite": 3
+        },
+        "unique": {
+          "cobre": 128,
+          "oro": 128,
+          "diamante": 32,
+          "netherite": 6
+        }
+      },
       "rewards": {
         "daily": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 64",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 16",
+            "mm items give -d %player% moneda_netherite 3",
             "eco give %player% 500000",
             "give %player% netherite_block 10",
             "give %player% diamond_block 64"
           ],
           "beneficies": [
+            "&6🪙 Monedas Diarias: &664x Cobre, &e128x Oro, &b16x Diamante, &53x Netherita",
             "&eObtienes $500,000, 10 Bloques de Netherita y 64 Bloques de Diamante"
           ]
         },
@@ -3351,6 +3938,10 @@
         },
         "unique": {
           "commands": [
+            "mm items give -d %player% moneda_cobre 128",
+            "mm items give -d %player% moneda_oro 128",
+            "mm items give -d %player% moneda_diamante 32",
+            "mm items give -d %player% moneda_netherite 6",
             "eco give %player% 50000000",
             "asets give %player% DeidadOneBlock",
             "asets weapon %player% DeidadOneBlock",
@@ -3381,6 +3972,7 @@
             "exp give %player% 5000L"
           ],
           "beneficies": [
+            "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b32x Diamante, &56x Netherita",
             "&d✧&l✦ RECOMPENSA SUPREMA: DEIDAD DEL ONEBLOCK ✦&d✧",
             "&f• &dFull Set de Netherite: &lDeidad del OneBlock &7(+2 Corazones por pieza / +8 Total)",
             "&f• &dArma Exclusiva: &lHacha de la Deidad &7(+20% Daño + Cleave + Robo de Vida)",
@@ -3394,7 +3986,7 @@
             "&f• &832 Bloques de Netherita &7+ &b32 Faros Sagrados"
           ],
           "specialSet": {
-            "name": "Set Deidad del OneBlock",
+            "name": "Set Deidades del OneBlock",
             "weapon": "Hacha de la Deidad",
             "material": "NETHERITE",
             "type": "Axe + Armor Set"

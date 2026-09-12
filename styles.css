@@ -1,48 +1,77 @@
-/* --- MINECRAFT THEME & COLOR PALETTE --- */
+/* ==============================================================================
+   MINECRAFT AUTHENTIC GUI THEME (No RGB / No Neon / Pure Minecraft Look)
+   OneBlock IslandRanks • Dextrality Network
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
 :root {
-  --mc-dark-bg: #121214;
-  --mc-panel-bg: #1f1f23;
-  --mc-panel-border: #3b3b44;
-  --mc-slot-bg: #2a2a30;
-  --mc-slot-border-dark: #151518;
-  --mc-slot-border-light: #4c4c57;
-  --mc-gold: #ffaa00;
-  --mc-aqua: #55ffff;
-  --mc-green: #55ff55;
-  --mc-red: #ff5555;
-  --mc-purple: #aa00aa;
-  --mc-light-purple: #ff55ff;
-  --mc-yellow: #ffff55;
-  --mc-white: #ffffff;
-  --mc-gray: #aaaaaa;
+  /* Vanilla Minecraft Chat & UI Palette */
+  --mc-c-0: #000000; /* Black */
+  --mc-c-1: #0000AA; /* Dark Blue */
+  --mc-c-2: #00AA00; /* Dark Green */
+  --mc-c-3: #00AAAA; /* Dark Aqua */
+  --mc-c-4: #AA0000; /* Dark Red */
+  --mc-c-5: #AA00AA; /* Dark Purple */
+  --mc-c-6: #FFAA00; /* Gold */
+  --mc-c-7: #AAAAAA; /* Gray */
+  --mc-c-8: #555555; /* Dark Gray */
+  --mc-c-9: #5555FF; /* Blue */
+  --mc-c-a: #55FF55; /* Green */
+  --mc-c-b: #55FFFF; /* Aqua */
+  --mc-c-c: #FF5555; /* Red */
+  --mc-c-d: #FF55FF; /* Light Purple */
+  --mc-c-e: #FFFF55; /* Yellow */
+  --mc-c-f: #FFFFFF; /* White */
+
+  /* Authentic GUI Surface Palette */
+  --gui-bg: #222226;
+  --gui-inner-bg: #18181b;
+  --gui-border-black: #000000;
+  --gui-highlight: #4c4c54;
+  --gui-shadow: #121214;
+  --gui-slot-bg: #8b8b8b;
+  --gui-slot-shadow: #373737;
+  --gui-slot-highlight: #ffffff;
 }
 
+/* Base reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-radius: 0 !important; /* Authentic Minecraft sharp pixel corners */
+}
+
+/* Pixel rendering for all Minecraft sprites */
+img, .mc-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 body.mc-theme {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: var(--mc-dark-bg);
+  font-family: 'VT323', monospace;
+  font-size: 18px;
   color: #e0e0e0;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  background-color: #14110e;
 }
 
-/* Background textures */
+/* Background: Repeating Pixelated Minecraft Dirt with dark vignette overlay */
 .mc-bg-dirt {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(#2c2016 1px, transparent 1px), radial-gradient(#1e150e 1px, #120e0a 1px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-  opacity: 0.85;
+  background-image: url('https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21/assets/minecraft/textures/block/dirt.png');
+  background-repeat: repeat;
+  background-size: 64px 64px;
+  image-rendering: pixelated;
+  filter: brightness(0.25) contrast(1.1);
   z-index: -2;
 }
 
@@ -52,81 +81,71 @@ body.mc-theme {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.85) 90%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.9) 85%);
   pointer-events: none;
   z-index: -1;
 }
 
-.mc-pixelated {
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-}
-
-/* Fonts */
-.mc-font {
-  font-family: 'VT323', monospace;
-  letter-spacing: 1px;
-}
-
+/* Layout container */
 .app-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 24px 16px 60px 16px;
+  padding: 20px 16px 60px 16px;
 }
 
-/* Header */
+/* --- HEADER: MINECRAFT SERVER TITLE SCREEN STYLE --- */
 .mc-header {
   text-align: center;
-  margin-bottom: 30px;
-  padding: 30px 20px;
-  background: linear-gradient(180deg, rgba(35, 35, 45, 0.85) 0%, rgba(20, 20, 25, 0.95) 100%);
-  border: 3px solid #4a4a58;
-  border-radius: 6px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), inset 0 2px 0 #6e6e80;
+  margin-bottom: 24px;
+  padding: 24px 16px;
+  background: #25252a;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-highlight), inset -2px -2px 0 0 var(--gui-shadow);
 }
 
 .server-badge {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 6px 14px;
-  border-radius: 4px;
-  border: 1px solid #4a4a58;
+  gap: 8px;
+  background: #151518;
+  padding: 6px 12px;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #3a3a42, inset -1px -1px 0 #0d0d10;
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  color: var(--mc-yellow);
-  margin-bottom: 14px;
+  font-size: 10px;
+  color: var(--mc-c-e);
+  margin-bottom: 12px;
   text-shadow: 2px 2px 0 #000;
 }
 
 .server-badge .star-icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .mc-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: clamp(20px, 4vw, 32px);
+  font-size: clamp(18px, 3.5vw, 30px);
   color: #ffaa00;
-  text-shadow: 3px 3px 0 #3f2a00, 5px 5px 0 #000;
-  margin-bottom: 12px;
+  text-shadow: 3px 3px 0 #3f2a00, 3px 3px 0 #000;
+  margin-bottom: 8px;
   letter-spacing: 1px;
 }
 
 .mc-subtitle {
-  font-size: 15px;
-  color: #bbb;
-  max-width: 700px;
-  margin: 0 auto 24px auto;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: #aaaaaa;
+  max-width: 750px;
+  margin: 0 auto 20px auto;
+  text-shadow: 1px 1px 0 #000;
 }
 
-/* Stats grid */
+/* Quick Stats Bar */
 .mc-stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  gap: 12px;
   max-width: 950px;
   margin: 0 auto;
 }
@@ -134,43 +153,42 @@ body.mc-theme {
 .mc-stat-box {
   display: flex;
   align-items: center;
-  gap: 14px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #3d3d4a;
-  border-radius: 4px;
-  padding: 12px 16px;
-  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.05);
+  gap: 12px;
+  background: #18181b;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 #2d2d35, inset -2px -2px 0 #0d0d10;
+  padding: 10px 14px;
 }
 
 .mc-stat-box img {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
 .stat-value {
   display: block;
   font-family: 'Press Start 2P', monospace;
-  font-size: 14px;
-  color: #fff;
-  text-shadow: 1px 1px 0 #000;
+  font-size: 13px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000;
 }
 
 .stat-label {
   display: block;
-  font-size: 12px;
-  color: #888;
-  margin-top: 2px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  color: #888888;
+  margin-top: 1px;
 }
 
-/* Navigation & Filters */
+/* --- TOOLBAR / FILTERS (MINECRAFT GUI STYLE) --- */
 .mc-nav-bar {
-  background: #25252d;
-  border: 3px solid #4a4a58;
-  border-radius: 6px;
-  padding: 16px;
-  margin-bottom: 28px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  background: #25252a;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-highlight), inset -2px -2px 0 0 var(--gui-shadow);
+  padding: 14px 16px;
+  margin-bottom: 24px;
 }
 
 .filters-row {
@@ -178,110 +196,118 @@ body.mc-theme {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
   margin-bottom: 12px;
 }
 
 .era-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
-/* Minecraft Button Style */
+/* AUTHENTIC MINECRAFT BUTTON */
 .mc-btn {
   font-family: 'Press Start 2P', monospace;
   font-size: 10px;
-  padding: 10px 14px;
-  background: #4a4a54;
-  color: #ffffff;
-  border-top: 2px solid #6b6b77;
-  border-left: 2px solid #6b6b77;
-  border-bottom: 2px solid #232328;
-  border-right: 2px solid #232328;
+  padding: 9px 13px;
+  background-color: #6b6b73;
+  color: #e0e0e0;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 #9e9ea8, inset -2px -2px 0 0 #3a3a40;
   cursor: pointer;
-  text-shadow: 2px 2px 0 #000;
-  transition: all 0.1s ease;
+  text-shadow: 2px 2px 0 #202020;
   user-select: none;
+  transition: background-color 0.05s ease;
 }
 
 .mc-btn:hover {
-  background: #5b5b67;
+  background-color: #7d7d87;
+  color: #ffffff;
 }
 
-.mc-btn.active {
-  background: #2f6b3f;
-  border-top: 2px solid #459a5d;
-  border-left: 2px solid #459a5d;
-  border-bottom: 2px solid #14331d;
-  border-right: 2px solid #14331d;
-  color: var(--mc-yellow);
+.mc-btn:active, .mc-btn.active {
+  background-color: #3b5f3b; /* Classic Minecraft active green */
+  color: #ffff55;
+  box-shadow: inset 2px 2px 0 0 #1b331b, inset -2px -2px 0 0 #619a61;
 }
 
+/* Search Box (Anvil text field style) */
 .search-box {
   flex-grow: 1;
-  max-width: 320px;
+  max-width: 420px;
 }
 
 .mc-input {
   width: 100%;
-  padding: 10px 14px;
-  background: #141418;
-  border: 2px solid #4a4a58;
-  border-radius: 4px;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  padding: 8px 12px;
+  background: #0d0d0f;
+  border: 2px solid #5a5a64;
+  color: #ffffff;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
   outline: none;
-  transition: border-color 0.2s;
+  box-shadow: inset 2px 2px 0 0 #000000;
 }
 
 .mc-input:focus {
-  border-color: var(--mc-aqua);
+  border-color: #ffffff;
+}
+
+.mc-input::placeholder {
+  color: #606066;
 }
 
 .secondary-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #373742;
-  padding-top: 12px;
+  border-top: 2px solid #18181b;
+  padding-top: 10px;
 }
 
 .view-toggles {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .mc-toggle-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
-  background: #1e1e24;
-  border: 1px solid #444450;
-  color: #aaa;
-  font-size: 13px;
-  border-radius: 4px;
+  padding: 5px 10px;
+  background: #4a4a50;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #73737d, inset -1px -1px 0 #29292d;
+  color: #b0b0b0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
   cursor: pointer;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.mc-toggle-btn:hover {
+  background: #5d5d66;
+  color: #fff;
 }
 
 .mc-toggle-btn.active {
-  background: #393946;
-  color: #fff;
-  border-color: #666675;
+  background: #2b452b;
+  color: #ffff55;
+  box-shadow: inset 1px 1px 0 #172717, inset -1px -1px 0 #528052;
 }
 
 .ranks-count-badge {
-  font-size: 13px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
   color: #8e8e9c;
 }
 
-/* CARDS GRID */
+/* --- CARDS GRID (MINECRAFT GUI WINDOWS) --- */
 .ranks-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  gap: 20px;
 }
 
 @media (max-width: 500px) {
@@ -290,21 +316,13 @@ body.mc-theme {
   }
 }
 
-/* Rank Card */
+/* Individual Rank Card: Styled as an authentic Minecraft GUI Container */
 .rank-card {
-  background: #1d1d24;
-  border: 3px solid #3d3d4b;
-  border-radius: 6px;
-  overflow: hidden;
+  background: var(--gui-bg);
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-highlight), inset -2px -2px 0 0 var(--gui-shadow);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-
-.rank-card:hover {
-  transform: translateY(-3px);
-  border-color: #5d5d70;
 }
 
 /* Card Header */
@@ -312,122 +330,131 @@ body.mc-theme {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 18px;
-  background: #272732;
-  border-bottom: 2px solid #383846;
+  padding: 10px 14px;
+  background: #18181c;
+  border-bottom: 2px solid var(--gui-border-black);
 }
 
 .rank-title-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .rank-badge {
   font-family: 'Press Start 2P', monospace;
-  font-size: 12px;
-  background: #0d0d10;
-  color: var(--mc-yellow);
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: 1px solid #414152;
+  font-size: 11px;
+  background: #0a0a0c;
+  color: var(--mc-c-e);
+  padding: 5px 8px;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #33333b, inset -1px -1px 0 #000;
   text-shadow: 1px 1px 0 #000;
 }
 
 .rank-name {
   font-family: 'Press Start 2P', monospace;
-  font-size: 13px;
+  font-size: 12px;
   text-shadow: 2px 2px 0 #000;
 }
 
 .era-tag {
-  font-size: 11px;
-  background: #363644;
-  padding: 3px 8px;
-  border-radius: 3px;
-  color: #bbb;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  background: #2f2f36;
+  border: 1px solid #4a4a54;
+  padding: 2px 6px;
+  color: #aaaaaa;
 }
 
 /* Card Body */
 .card-body {
-  padding: 16px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
   flex-grow: 1;
 }
 
-/* Requirements Section */
+/* Section Title */
 .section-title {
   display: flex;
   align-items: center;
   gap: 8px;
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  color: var(--mc-aqua);
+  font-size: 10px;
+  color: var(--mc-c-b);
   text-shadow: 1px 1px 0 #000;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .section-title img {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Requirements Box */
+.requirements-box {
+  background: var(--gui-inner-bg);
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #2e2e36, inset -1px -1px 0 #0d0d10;
+  padding: 10px 12px;
 }
 
 .req-chips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 6px;
+  margin-bottom: 10px;
 }
 
 .req-chip {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #141419;
-  border: 1px solid #2e2e38;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 12px;
+  background: #121215;
+  border: 1px solid #2d2d36;
+  padding: 5px 8px;
 }
 
 .req-chip img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .chip-label {
-  color: #8e8e9e;
-  font-size: 11px;
+  font-family: 'VT323', monospace;
+  color: #888888;
+  font-size: 15px;
   display: block;
+  line-height: 1;
 }
 
 .chip-val {
-  font-weight: 700;
-  color: #fff;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.1;
 }
 
-/* Minecraft Inventory Slots Grid */
+/* --- AUTHENTIC MINECRAFT ITEM SLOTS --- */
 .mc-slots-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  background: #15151a;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #2e2e3a;
+  gap: 6px;
+  background: #111114;
+  padding: 8px;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #22222a;
 }
 
 .mc-slot {
-  width: 44px;
-  height: 44px;
-  background-color: #8b8b8b;
-  border-top: 3px solid #373737;
-  border-left: 3px solid #373737;
-  border-right: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
+  width: 42px;
+  height: 42px;
+  background-color: var(--gui-slot-bg);
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-slot-shadow), inset -2px -2px 0 0 var(--gui-slot-highlight);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,18 +464,20 @@ body.mc-theme {
 }
 
 .mc-slot:hover {
-  background-color: #a8a8a8;
+  background-color: #a0a0a0;
+  box-shadow: inset 2px 2px 0 0 #505050, inset -2px -2px 0 0 #ffffff;
 }
 
 .mc-slot img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
+/* Item Count (Exact Minecraft Bottom-Right 4-Way Stroke Font) */
 .mc-slot .item-count {
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   right: 2px;
   font-family: 'Press Start 2P', monospace;
   font-size: 9px;
@@ -457,33 +486,131 @@ body.mc-theme {
   pointer-events: none;
 }
 
-/* Island Bonuses Row */
+/* --- COINS BOX: MINECRAFT INVENTORY POUCH (NO RGB / NO GLOW) --- */
+.coins-reward-box {
+  background: var(--gui-inner-bg);
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #2e2e36, inset -1px -1px 0 #0d0d10;
+  padding: 10px 12px;
+}
+
+.coins-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: var(--mc-c-6);
+  text-shadow: 1px 1px 0 #000;
+  margin-bottom: 8px;
+}
+
+.coins-section-header img {
+  width: 16px;
+  height: 16px;
+}
+
+.coins-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coins-subgroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.coins-subgroup-title {
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  color: #aaaaaa;
+  min-width: 90px;
+}
+
+.coins-chips-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* Authentic Coin Slot Chip (Clean Pixel Badge) */
+.coin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 6px;
+  background: #111114;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #33333b, inset -1px -1px 0 #000;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.coin-chip:hover {
+  background: #25252d;
+}
+
+.coin-chip img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.coin-chip .coin-amount {
+  font-weight: bold;
+}
+
+/* Authentic Minecraft Coin Colors (No Glows) */
+.coin-cobre {
+  border-color: #553311;
+  color: #ffaa66;
+}
+.coin-oro {
+  border-color: #554400;
+  color: #ffff55;
+}
+.coin-diamante {
+  border-color: #004455;
+  color: #55ffff;
+}
+.coin-netherite {
+  border-color: #442255;
+  color: #ff55ff;
+}
+
+/* Island Bonuses */
 .bonuses-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  background: rgba(40, 100, 50, 0.15);
-  border: 1px solid rgba(80, 180, 100, 0.3);
-  padding: 8px 12px;
-  border-radius: 4px;
+  gap: 6px;
+  background: #121812;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #1b301b, inset -1px -1px 0 #060e06;
+  padding: 6px 10px;
 }
 
 .bonus-pill {
-  font-size: 11px;
-  color: #70d890;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  color: #55ff55;
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  text-shadow: 1px 1px 0 #000;
 }
 
-/* Unique Reward Card Box (The Star of the Show!) */
+/* --- UNIQUE REWARD BOX: MINECRAFT LORE PARCHMENT STYLE --- */
 .unique-reward-box {
-  background: linear-gradient(135deg, rgba(45, 20, 55, 0.9) 0%, rgba(20, 15, 30, 0.95) 100%);
-  border: 2px solid #9c45bf;
-  border-radius: 6px;
-  padding: 14px;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(156, 69, 191, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  background: #1a1720;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 #3b2d47, inset -2px -2px 0 0 #0c0812;
+  padding: 12px;
 }
 
 .unique-header {
@@ -491,181 +618,187 @@ body.mc-theme {
   align-items: center;
   gap: 8px;
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  color: #f77fff;
+  font-size: 10px;
+  color: var(--mc-c-d);
   text-shadow: 2px 2px 0 #000;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .unique-header img {
-  width: 22px;
-  height: 22px;
-  filter: drop-shadow(0 0 6px #f77fff);
+  width: 18px;
+  height: 18px;
 }
 
 .unique-desc-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .unique-desc-list li {
-  font-size: 12px;
-  line-height: 1.4;
-  color: #e2d7ea;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #dddddd;
+  text-shadow: 1px 1px 0 #000;
 }
 
-/* Special Armor Set Highlight Box */
+/* Special Armor Set Display (Rank 10, 20, 30) */
 .special-set-badge {
-  margin-top: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid #d488ff;
-  border-radius: 4px;
-  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background: #100f14;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 1px 1px 0 #2a2033;
+  padding: 8px;
 }
 
 .set-badge-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: 10px;
-  color: #ffdc55;
-  margin-bottom: 8px;
+  font-size: 9px;
+  color: var(--mc-c-e);
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
   gap: 6px;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .set-pieces-slots {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-/* MINECRAFT ITEM TOOLTIP */
+/* --- AUTHENTIC MINECRAFT ITEM TOOLTIP --- */
 .mc-tooltip {
   position: fixed;
   z-index: 9999;
-  background: #100010;
-  border: 2px solid;
-  border-image: linear-gradient(180deg, #28007F 0%, #14003F 100%) 1;
-  padding: 10px 14px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.9);
+  background-color: #100010;
+  border: 2px solid #28007F;
+  outline: 2px solid #000000;
+  padding: 8px 12px;
   pointer-events: none;
-  max-width: 320px;
-  min-width: 200px;
+  max-width: 340px;
+  min-width: 180px;
 }
 
 .tooltip-title {
   font-family: 'VT323', monospace;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 4px;
-  text-shadow: 1px 1px 0 #000;
+  text-shadow: 2px 2px 0 #140026;
 }
 
 .tooltip-lore {
   font-family: 'VT323', monospace;
-  font-size: 16px;
-  color: #aaa;
-  line-height: 1.3;
+  font-size: 18px;
+  color: #aaaaaa;
+  line-height: 1.25;
+  text-shadow: 2px 2px 0 #140026;
 }
 
-/* TABLE VIEW */
+/* --- TABLE VIEW: MINECRAFT SERVER TABLE --- */
 .ranks-table-wrapper {
-  background: #1d1d24;
-  border: 3px solid #3d3d4b;
-  border-radius: 6px;
+  background: var(--gui-bg);
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-highlight), inset -2px -2px 0 0 var(--gui-shadow);
   overflow-x: auto;
 }
 
 .mc-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
   text-align: left;
 }
 
 .mc-table th {
-  background: #272732;
+  background: #18181c;
   font-family: 'Press Start 2P', monospace;
-  font-size: 10px;
-  color: var(--mc-yellow);
-  padding: 14px 12px;
-  border-bottom: 2px solid #3d3d4b;
+  font-size: 9px;
+  color: var(--mc-c-e);
+  padding: 12px 10px;
+  border-bottom: 2px solid var(--gui-border-black);
   text-shadow: 1px 1px 0 #000;
 }
 
 .mc-table td {
-  padding: 12px;
-  border-bottom: 1px solid #2e2e38;
+  padding: 10px;
+  border-bottom: 1px solid #18181b;
   vertical-align: middle;
 }
 
 .mc-table tr:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: #2b2b31;
 }
 
 /* Footer */
 .mc-footer {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
-  padding: 24px;
-  background: #18181f;
-  border: 2px solid #333340;
-  border-radius: 6px;
+  padding: 20px;
+  background: #202025;
+  border: 2px solid var(--gui-border-black);
+  box-shadow: inset 2px 2px 0 0 var(--gui-highlight), inset -2px -2px 0 0 var(--gui-shadow);
 }
 
 .server-ip-box {
   display: inline-block;
-  background: #0d0d12;
-  border: 2px dashed #ffaa00;
-  padding: 10px 20px;
-  border-radius: 4px;
+  background: #101014;
+  border: 2px solid #ffaa00;
+  box-shadow: inset 1px 1px 0 #3a2800;
+  padding: 8px 16px;
   color: #ffaa00;
   font-family: 'Press Start 2P', monospace;
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
-  margin-bottom: 14px;
-  transition: all 0.2s;
+  margin-bottom: 10px;
+  user-select: none;
 }
 
 .server-ip-box:hover {
-  background: #252010;
-  transform: scale(1.03);
+  background: #231b0a;
 }
 
 .copy-badge {
-  font-size: 9px;
-  background: #443300;
-  padding: 3px 6px;
-  border-radius: 3px;
-  margin-left: 8px;
+  font-size: 8px;
+  background: #3f2a00;
+  border: 1px solid #ffaa00;
+  padding: 2px 5px;
+  margin-left: 6px;
   color: #ffea88;
 }
 
 .footer-copy {
-  font-size: 12px;
-  color: #777;
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  color: #777777;
 }
 
-/* MC Color Spans */
-.mc-c-0 { color: #000000; }
-.mc-c-1 { color: #0000aa; }
-.mc-c-2 { color: #00aa00; }
-.mc-c-3 { color: #00aaaa; }
-.mc-c-4 { color: #aa0000; }
-.mc-c-5 { color: #aa00aa; }
-.mc-c-6 { color: #ffaa00; }
-.mc-c-7 { color: #aaaaaa; }
-.mc-c-8 { color: #555555; }
-.mc-c-9 { color: #5555ff; }
-.mc-c-a { color: #55ff55; }
-.mc-c-b { color: #55ffff; }
-.mc-c-c { color: #ff5555; }
-.mc-c-d { color: #ff55ff; }
-.mc-c-e { color: #ffff55; }
-.mc-c-f { color: #ffffff; }
+/* --- MINECRAFT COLOR CODES CLASSES (Exact Hex & Shadows) --- */
+.mc-c-0 { color: #000000; text-shadow: 1px 1px 0 #202020; }
+.mc-c-1 { color: #0000aa; text-shadow: 1px 1px 0 #000030; }
+.mc-c-2 { color: #00aa00; text-shadow: 1px 1px 0 #003000; }
+.mc-c-3 { color: #00aaaa; text-shadow: 1px 1px 0 #003030; }
+.mc-c-4 { color: #aa0000; text-shadow: 1px 1px 0 #300000; }
+.mc-c-5 { color: #aa00aa; text-shadow: 1px 1px 0 #300030; }
+.mc-c-6 { color: #ffaa00; text-shadow: 1px 1px 0 #3f2a00; }
+.mc-c-7 { color: #aaaaaa; text-shadow: 1px 1px 0 #2a2a2a; }
+.mc-c-8 { color: #555555; text-shadow: 1px 1px 0 #151515; }
+.mc-c-9 { color: #5555ff; text-shadow: 1px 1px 0 #151540; }
+.mc-c-a { color: #55ff55; text-shadow: 1px 1px 0 #154015; }
+.mc-c-b { color: #55ffff; text-shadow: 1px 1px 0 #154040; }
+.mc-c-c { color: #ff5555; text-shadow: 1px 1px 0 #401515; }
+.mc-c-d { color: #ff55ff; text-shadow: 1px 1px 0 #401540; }
+.mc-c-e { color: #ffff55; text-shadow: 1px 1px 0 #404015; }
+.mc-c-f { color: #ffffff; text-shadow: 1px 1px 0 #252525; }
+
 .mc-bold { font-weight: bold; }
 .mc-italic { font-style: italic; }
 .mc-underline { text-decoration: underline; }
