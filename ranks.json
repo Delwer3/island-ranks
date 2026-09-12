@@ -26,11 +26,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 1",
-            "label": "Fase OneBlock: Planicie",
-            "icon": "GRASS_BLOCK"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 500",
             "label": "Nivel de Isla 500",
             "icon": "BEACON"
@@ -127,11 +122,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 2",
-            "label": "Fase OneBlock: Bosque",
-            "icon": "OAK_LOG"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 2500",
             "label": "Nivel de Isla 2,500",
             "icon": "BEACON"
@@ -223,11 +213,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 3",
-            "label": "Fase OneBlock: Bosque Floral",
-            "icon": "DANDELION"
-          },
           {
             "expression": "%superior_island_level_raw% >= 10000",
             "label": "Nivel de Isla 10,000",
@@ -326,11 +311,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 4",
-            "label": "Fase OneBlock: Arboleda de Cerezos",
-            "icon": "CHERRY_SAPLING"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 25000",
             "label": "Nivel de Isla 25,000",
             "icon": "BEACON"
@@ -428,11 +408,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 5",
-            "label": "Fase OneBlock: Bosque Oscuro",
-            "icon": "DARK_OAK_LOG"
-          },
           {
             "expression": "%superior_island_level_raw% >= 50000",
             "label": "Nivel de Isla 50,000",
@@ -550,11 +525,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 6",
-            "label": "Fase OneBlock: Desierto",
-            "icon": "SAND"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 100000",
             "label": "Nivel de Isla 100,000",
             "icon": "BEACON"
@@ -660,11 +630,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 7",
-            "label": "Fase OneBlock: Sabana",
-            "icon": "ACACIA_LOG"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 200000",
             "label": "Nivel de Isla 200,000",
             "icon": "BEACON"
@@ -768,11 +733,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 8",
-            "label": "Fase OneBlock: Pantano",
-            "icon": "MUD"
-          },
           {
             "expression": "%superior_island_level_raw% >= 350000",
             "label": "Nivel de Isla 350,000",
@@ -882,11 +842,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 9",
-            "label": "Fase OneBlock: Pantano de Mangles",
-            "icon": "MANGROVE_ROOTS"
-          },
           {
             "expression": "%superior_island_level_raw% >= 500000",
             "label": "Nivel de Isla 500,000",
@@ -998,11 +953,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 10",
-            "label": "Fase OneBlock: Taiga",
-            "icon": "SPRUCE_LOG"
-          },
           {
             "expression": "%superior_island_level_raw% >= 750000",
             "label": "Nivel de Isla 750,000",
@@ -1136,11 +1086,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 11",
-            "label": "Fase OneBlock: Taiga Nevada",
-            "icon": "SNOW_BLOCK"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 1100000",
             "label": "Nivel de Isla 1,100,000",
             "icon": "BEACON"
@@ -1250,11 +1195,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 12",
-            "label": "Fase OneBlock: Llanura Nevada",
-            "icon": "PACKED_ICE"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 1500000",
             "label": "Nivel de Isla 1,500,000",
             "icon": "BEACON"
@@ -1363,11 +1303,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 13",
-            "label": "Fase OneBlock: Jungla",
-            "icon": "JUNGLE_LOG"
-          },
           {
             "expression": "%superior_island_level_raw% >= 2000000",
             "label": "Nivel de Isla 2,000,000",
@@ -1484,11 +1419,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 14",
-            "label": "Fase OneBlock: Jungla de Bambu",
-            "icon": "BAMBOO"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 2600000",
             "label": "Nivel de Isla 2,600,000",
             "icon": "BEACON"
@@ -1602,11 +1532,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 15",
-            "label": "Fase OneBlock: Colinas Ventosas",
-            "icon": "STONE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 3300000",
             "label": "Nivel de Isla 3,300,000",
@@ -1731,11 +1656,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 16",
-            "label": "Fase OneBlock: Picos Congelados",
-            "icon": "BLUE_ICE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 4200000",
             "label": "Nivel de Isla 4,200,000",
@@ -1875,11 +1795,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 17",
-            "label": "Fase OneBlock: Tierras Baldias",
-            "icon": "RED_SAND"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 5200000",
             "label": "Nivel de Isla 5,200,000",
             "icon": "BEACON"
@@ -2017,11 +1932,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 18",
-            "label": "Fase OneBlock: Oceano Calido",
-            "icon": "SEA_PICKLE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 6300000",
             "label": "Nivel de Isla 6,300,000",
@@ -2162,11 +2072,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 19",
-            "label": "Fase OneBlock: Oceano Congelado",
-            "icon": "ICE"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 7500000",
             "label": "Nivel de Isla 7,500,000",
             "icon": "BEACON"
@@ -2304,11 +2209,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 20",
-            "label": "Fase OneBlock: Oceano Profundo",
-            "icon": "PRISMARINE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 9000000",
             "label": "Nivel de Isla 9,000,000",
@@ -2470,11 +2370,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 21",
-            "label": "Fase OneBlock: Campos de Setas",
-            "icon": "MYCELIUM"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 10500000",
             "label": "Nivel de Isla 10,500,000",
             "icon": "BEACON"
@@ -2611,11 +2506,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 22",
-            "label": "Fase OneBlock: Cuevas Frondosas",
-            "icon": "MOSS_BLOCK"
-          },
           {
             "expression": "%superior_island_level_raw% >= 12000000",
             "label": "Nivel de Isla 12,000,000",
@@ -2758,11 +2648,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 23",
-            "label": "Fase OneBlock: Cuevas de Espeleotema",
-            "icon": "POINTED_DRIPSTONE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 13500000",
             "label": "Nivel de Isla 13,500,000",
@@ -2909,11 +2794,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 24",
-            "label": "Fase OneBlock: Oscuridad Profunda",
-            "icon": "SCULK"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 15000000",
             "label": "Nivel de Isla 15,000,000",
             "icon": "BEACON"
@@ -3055,11 +2935,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 25",
-            "label": "Fase OneBlock: Yermos del Nether",
-            "icon": "NETHERRACK"
-          },
           {
             "expression": "%superior_island_level_raw% >= 16500000",
             "label": "Nivel de Isla 16,500,000",
@@ -3208,11 +3083,6 @@
         ],
         "conditions": [
           {
-            "expression": "oneblock.phase >= 26",
-            "label": "Fase OneBlock: Bosque Carmesi",
-            "icon": "CRIMSON_STEM"
-          },
-          {
             "expression": "%superior_island_level_raw% >= 17200000",
             "label": "Nivel de Isla 17,200,000",
             "icon": "BEACON"
@@ -3354,11 +3224,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 27",
-            "label": "Fase OneBlock: Bosque Deformado",
-            "icon": "WARPED_STEM"
-          },
           {
             "expression": "%superior_island_level_raw% >= 18000000",
             "label": "Nivel de Isla 18,000,000",
@@ -3506,11 +3371,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 28",
-            "label": "Fase OneBlock: Valle de Almas",
-            "icon": "SOUL_SAND"
-          },
           {
             "expression": "%superior_island_level_raw% >= 18800000",
             "label": "Nivel de Isla 18,800,000",
@@ -3661,11 +3521,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 29",
-            "label": "Fase OneBlock: Deltas de Basalto",
-            "icon": "BASALT"
-          },
           {
             "expression": "%superior_island_level_raw% >= 19400000",
             "label": "Nivel de Isla 19,400,000",
@@ -3819,11 +3674,6 @@
           }
         ],
         "conditions": [
-          {
-            "expression": "oneblock.phase >= 30",
-            "label": "Fase OneBlock: El Fin",
-            "icon": "END_STONE"
-          },
           {
             "expression": "%superior_island_level_raw% >= 20000000",
             "label": "Nivel de Isla 20,000,000",

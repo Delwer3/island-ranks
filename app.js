@@ -205,18 +205,13 @@ function renderCards(ranks) {
     card.className = 'rank-card';
     card.id = `rank-${rank.weight}`;
 
-    // Extract Phase Requirement
-    const phaseCond = rank.requirements.conditions.find(c => c.expression.includes('oneblock.phase'));
-    const phaseLabel = phaseCond ? phaseCond.label : `Fase ${rank.weight}`;
-    const phaseIcon = phaseCond ? phaseCond.icon : 'GRASS_BLOCK';
-
     // Extract Island Level Requirement
     const levelCond = rank.requirements.conditions.find(c => c.expression.includes('superior_island_level'));
     const levelLabel = levelCond ? levelCond.label : 'Nivel de Isla Requerido';
 
     // Extract Extra Conditions (Bosses, communal skills, mob kills)
     const extraConds = rank.requirements.conditions.filter(c => 
-      !c.expression.includes('oneblock.phase') && !c.expression.includes('superior_island_level')
+      !c.expression.includes('superior_island_level')
     );
 
     // Special items / sets
@@ -252,16 +247,8 @@ function renderCards(ranks) {
             Requisitos de Ascenso
           </div>
 
-          <!-- Phase and Level chips -->
+          <!-- Requirement chips -->
           <div class="req-chips-grid">
-            <div class="req-chip" onmouseenter="showTooltip(event, '${phaseLabel}', 'Requisito de fase de OneBlock')" onmouseleave="hideTooltip()">
-              <img src="${getMinecraftAssetUrl(phaseIcon)}" onerror="handleImgError(this)" class="mc-pixelated" alt="Phase">
-              <div>
-                <span class="chip-label">Fase OneBlock</span>
-                <span class="chip-val">${phaseLabel.replace('Fase OneBlock: ', '')}</span>
-              </div>
-            </div>
-
             <div class="req-chip" onmouseenter="showTooltip(event, 'Nivel de Isla', '${levelLabel}')" onmouseleave="hideTooltip()">
               <img src="${getMinecraftAssetUrl('BEACON')}" onerror="handleImgError(this)" class="mc-pixelated" alt="Level">
               <div>
@@ -408,9 +395,6 @@ function renderTable(ranks) {
   ranks.forEach(rank => {
     const tr = document.createElement('tr');
 
-    const phaseCond = rank.requirements.conditions.find(c => c.expression.includes('oneblock.phase'));
-    const phaseLabel = phaseCond ? phaseCond.label.replace('Fase OneBlock: ', '') : `Fase ${rank.weight}`;
-
     const levelCond = rank.requirements.conditions.find(c => c.expression.includes('superior_island_level'));
     const levelLabel = levelCond ? levelCond.label.replace('Nivel de Isla ', '') : '-';
 
@@ -423,9 +407,9 @@ function renderTable(ranks) {
     tr.innerHTML = `
       <td><strong>#${rank.weight}</strong></td>
       <td><strong>${formatMcColors(rank.colorName)}</strong></td>
-      <td>${phaseLabel}</td>
       <td>${levelLabel}</td>
       <td style="color: var(--mc-yellow); font-weight: bold;">$${formatNumber(rank.requirements.money)}</td>
+      <td style="color: var(--mc-c-a); font-weight: bold;">${rank.requirements.xp} L</td>
       <td style="max-width: 250px; font-size: 11px;">${itemsSummary}</td>
       <td style="max-width: 350px;">${formatMcColors(uniqueSummary)}</td>
     `;
