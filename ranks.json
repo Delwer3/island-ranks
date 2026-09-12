@@ -85,13 +85,12 @@
         "unique": {
           "commands": [
             "mm items give -d %player% moneda_cobre 4",
-            "eco give %player% 50000",
             "give %player% iron_ingot 32",
             "exp give %player% 500"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &64x Cobre",
-            "&6Recompensa Única: &e$50,000, 32 Lingotes de Hierro y 500 EXP"
+            "&6Recompensa Única: &e32 Lingotes de Hierro y 500 EXP"
           ],
           "specialSet": null
         }
@@ -188,13 +187,12 @@
         "unique": {
           "commands": [
             "mm items give -d %player% moneda_cobre 8",
-            "eco give %player% 100000",
             "give %player% gold_ingot 32",
             "exp give %player% 1000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &68x Cobre",
-            "&6Recompensa Única: &e$100,000, 32 Lingotes de Oro y 1,000 EXP"
+            "&6Recompensa Única: &e32 Lingotes de Oro y 1,000 EXP"
           ],
           "specialSet": null
         }
@@ -286,13 +284,12 @@
         "unique": {
           "commands": [
             "mm items give -d %player% moneda_cobre 12",
-            "eco give %player% 150000",
             "give %player% diamond 16",
             "exp give %player% 1500"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &612x Cobre",
-            "&6Recompensa Única: &e$150,000, 16 Diamantes y 1,500 EXP"
+            "&6Recompensa Única: &e16 Diamantes y 1,500 EXP"
           ],
           "specialSet": null
         }
@@ -390,13 +387,12 @@
         "unique": {
           "commands": [
             "mm items give -d %player% moneda_cobre 16",
-            "eco give %player% 200000",
             "give %player% diamond 24",
             "exp give %player% 2000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &616x Cobre",
-            "&6Recompensa Única: &e$200,000, 24 Diamantes y 2,000 EXP"
+            "&6Recompensa Única: &e24 Diamantes y 2,000 EXP"
           ],
           "specialSet": null
         }
@@ -511,14 +507,13 @@
           "commands": [
             "mm items give -d %player% moneda_cobre 20",
             "mm items give -d %player% moneda_oro 2",
-            "eco give %player% 300000",
             "give %player% diamond 32",
             "phoenixc giveKey Oneblock_Usuario %player% 1",
             "exp give %player% 2500"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &620x Cobre, &e2x Oro",
-            "&6Recompensa Única: &e$300,000, 32 Diamantes, 1x Llave Usuario y 2,500 EXP"
+            "&6Recompensa Única: &e32 Diamantes, 1x Llave Usuario y 2,500 EXP"
           ],
           "specialSet": null
         }
@@ -622,14 +617,13 @@
           "commands": [
             "mm items give -d %player% moneda_cobre 24",
             "mm items give -d %player% moneda_oro 4",
-            "eco give %player% 450000",
             "give %player% diamond 48",
             "phoenixc giveKey Oneblock_Usuario %player% 1",
             "exp give %player% 3000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &624x Cobre, &e4x Oro",
-            "&6Recompensa Única: &e$450,000, 48 Diamantes, 1x Llave Usuario y 3,000 EXP"
+            "&6Recompensa Única: &e48 Diamantes, 1x Llave Usuario y 3,000 EXP"
           ],
           "specialSet": null
         }
@@ -732,14 +726,13 @@
           "commands": [
             "mm items give -d %player% moneda_cobre 32",
             "mm items give -d %player% moneda_oro 6",
-            "eco give %player% 600000",
             "give %player% diamond_block 8",
             "phoenixc giveKey Oneblock_Usuario %player% 2",
             "exp give %player% 3500"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &632x Cobre, &e6x Oro",
-            "&6Recompensa Única: &e$600,000, 8 Bloques de Diamante, 2x Llave Usuario y 3,500 EXP"
+            "&6Recompensa Única: &e8 Bloques de Diamante, 2x Llave Usuario y 3,500 EXP"
           ],
           "specialSet": null
         }
@@ -847,14 +840,13 @@
           "commands": [
             "mm items give -d %player% moneda_cobre 40",
             "mm items give -d %player% moneda_oro 8",
-            "eco give %player% 800000",
             "give %player% diamond_block 16",
             "phoenixc giveKey Oneblock_Usuario %player% 2",
             "exp give %player% 4000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &640x Cobre, &e8x Oro",
-            "&6Recompensa Única: &e$800,000, 16 Bloques de Diamante, 2x Llave Usuario y 4,000 EXP"
+            "&6Recompensa Única: &e16 Bloques de Diamante, 2x Llave Usuario y 4,000 EXP"
           ],
           "specialSet": null
         }
@@ -964,14 +956,13 @@
           "commands": [
             "mm items give -d %player% moneda_cobre 48",
             "mm items give -d %player% moneda_oro 12",
-            "eco give %player% 1000000",
             "give %player% diamond_block 24",
             "phoenixc giveKey Oneblock_Dextra %player% 1",
             "exp give %player% 5000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &648x Cobre, &e12x Oro",
-            "&6Recompensa Única: &e$1,000,000, 24 Bloques de Diamante, 1x Llave Dextra y 5,000 EXP"
+            "&6Recompensa Única: &e24 Bloques de Diamante, 1x Llave Dextra y 5,000 EXP"
           ],
           "specialSet": null
         }
@@ -1090,7 +1081,6 @@
             "mm items give -d %player% moneda_cobre 56",
             "mm items give -d %player% moneda_oro 16",
             "mm items give -d %player% moneda_diamante 2",
-            "eco give %player% 2500000",
             "asets give %player% SenorDiamante",
             "asets weapon %player% SenorDiamante",
             "phoenixc giveKey Oneblock_Dextra %player% 2",
@@ -1103,7 +1093,7 @@
             "&b&l✦ HITO ERA II - SEÑOR DEL DIAMANTE ✦",
             "&f• &bFull Set de Netherite: &lSeñor del Diamante &7(Resistencia I + Prisa II)",
             "&f• &bArma Exclusiva: &lArco del Señor del Diamante &7(+15% Daño Proyectil)",
-            "&f• &e$2,500,000 en Efectivo &7+ &b100 Niveles de Experiencia",
+            "&f• &b100 Niveles de Experiencia",
             "&f• &d2x Llaves Dextra &7+ &b32 Bloques de Diamante &7+ &84 Lingotes Netherita"
           ],
           "specialSet": {
@@ -1216,7 +1206,6 @@
             "mm items give -d %player% moneda_cobre 64",
             "mm items give -d %player% moneda_oro 20",
             "mm items give -d %player% moneda_diamante 2",
-            "eco give %player% 2000000",
             "give %player% diamond_block 48",
             "give %player% netherite_ingot 4",
             "phoenixc giveKey Oneblock_Dextra %player% 2",
@@ -1224,7 +1213,7 @@
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &664x Cobre, &e20x Oro, &b2x Diamante",
-            "&6Recompensa Única: &e$2,000,000, 48 Bloques de Diamante, 4 Lingotes Netherita, 2x Llaves Dextra y 7,000 EXP"
+            "&6Recompensa Única: &e48 Bloques de Diamante, 4 Lingotes Netherita, 2x Llaves Dextra y 7,000 EXP"
           ],
           "specialSet": null
         }
@@ -1331,7 +1320,6 @@
             "mm items give -d %player% moneda_cobre 72",
             "mm items give -d %player% moneda_oro 24",
             "mm items give -d %player% moneda_diamante 4",
-            "eco give %player% 2500000",
             "give %player% diamond_block 64",
             "give %player% netherite_ingot 6",
             "phoenixc giveKey Oneblock_Dextra %player% 3",
@@ -1339,7 +1327,7 @@
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &672x Cobre, &e24x Oro, &b4x Diamante",
-            "&6Recompensa Única: &e$2,500,000, 64 Bloques de Diamante, 6 Lingotes Netherita, 3x Llaves Dextra y 8,000 EXP"
+            "&6Recompensa Única: &e64 Bloques de Diamante, 6 Lingotes Netherita, 3x Llaves Dextra y 8,000 EXP"
           ],
           "specialSet": null
         }
@@ -1453,14 +1441,13 @@
             "mm items give -d %player% moneda_cobre 80",
             "mm items give -d %player% moneda_oro 28",
             "mm items give -d %player% moneda_diamante 4",
-            "eco give %player% 3000000",
             "give %player% netherite_block 1",
             "phoenixc giveKey Oneblock_DexParty %player% 2",
             "exp give %player% 9000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &680x Cobre, &e28x Oro, &b4x Diamante",
-            "&6Recompensa Única: &e$3,000,000, 1 Bloque de Netherita, 2x Llaves DexParty y 9,000 EXP"
+            "&6Recompensa Única: &e1 Bloque de Netherita, 2x Llaves DexParty y 9,000 EXP"
           ],
           "specialSet": null
         }
@@ -1573,14 +1560,13 @@
             "mm items give -d %player% moneda_cobre 88",
             "mm items give -d %player% moneda_oro 32",
             "mm items give -d %player% moneda_diamante 6",
-            "eco give %player% 3500000",
             "give %player% netherite_block 2",
             "phoenixc giveKey Oneblock_Vulcano %player% 1",
             "exp give %player% 10000"
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &688x Cobre, &e32x Oro, &b6x Diamante",
-            "&6Recompensa Única: &e$3,500,000, 2 Bloques de Netherita, 1x Llave Vulcano y 10,000 EXP"
+            "&6Recompensa Única: &e2 Bloques de Netherita, 1x Llave Vulcano y 10,000 EXP"
           ],
           "specialSet": null
         }
@@ -1702,7 +1688,6 @@
             "mm items give -d %player% moneda_cobre 96",
             "mm items give -d %player% moneda_oro 40",
             "mm items give -d %player% moneda_diamante 6",
-            "eco give %player% 4500000",
             "give %player% netherite_block 3",
             "give %player% beacon 1",
             "phoenixc giveKey Oneblock_Vulcano %player% 1",
@@ -1710,7 +1695,7 @@
           ],
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &696x Cobre, &e40x Oro, &b6x Diamante",
-            "&6Recompensa Única: &e$4,500,000, 3 Bloques de Netherita, 1x Faro, 1x Llave Vulcano y 12,000 EXP"
+            "&6Recompensa Única: &e3 Bloques de Netherita, 1x Faro, 1x Llave Vulcano y 12,000 EXP"
           ],
           "specialSet": null
         }
@@ -1823,7 +1808,6 @@
             "mm items give -d %player% moneda_cobre 104",
             "mm items give -d %player% moneda_oro 48",
             "mm items give -d %player% moneda_diamante 8",
-            "eco give %player% 4000000",
             "phoenixc giveKey Oneblock_Dextra %player% 2",
             "phoenixc giveKey Oneblock_KOTH %player% 2",
             "phoenixc giveKey Oneblock_Vulcano %player% 2",
@@ -1849,7 +1833,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6104x Cobre, &e48x Oro, &b8x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: INICIACIÓN ENDGAME ✦",
-            "&f• &e$4,000,000 en Efectivo &7+ &b300 Niveles de EXP",
+            "&f• &b300 Niveles de EXP",
             "&f• &a2x Llaves Dextra&7, &c2x KOTH &7y &62x Vulcano",
             "&f• &58x Runas por cada Tier &8(&6Heroico &7a &dDextra&8) &7+ &54x Exalted",
             "&f• &b1x Polvo Mágico por cada Tier de Encantamiento",
@@ -1967,7 +1951,6 @@
             "mm items give -d %player% moneda_cobre 112",
             "mm items give -d %player% moneda_oro 56",
             "mm items give -d %player% moneda_diamante 8",
-            "eco give %player% 5000000",
             "phoenixc giveKey Oneblock_Dextra %player% 3",
             "phoenixc giveKey Oneblock_KOTH %player% 2",
             "phoenixc giveKey Oneblock_DexParty %player% 1",
@@ -1993,7 +1976,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6112x Cobre, &e56x Oro, &b8x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: PODER ARCANO ✦",
-            "&f• &e$5,000,000 en Efectivo &7+ &b350 Niveles de EXP",
+            "&f• &b350 Niveles de EXP",
             "&f• &a3x Llaves Dextra&7, &c2x KOTH &7y &d1x DexParty",
             "&f• &510x Runas por cada Tier &7+ &55x Runas Exalted",
             "&f• &b2x Polvos Mágicos por cada Tier",
@@ -2110,7 +2093,6 @@
             "mm items give -d %player% moneda_cobre 120",
             "mm items give -d %player% moneda_oro 64",
             "mm items give -d %player% moneda_diamante 10",
-            "eco give %player% 6000000",
             "phoenixc giveKey Oneblock_Dextra %player% 3",
             "phoenixc giveKey Oneblock_KOTH %player% 3",
             "phoenixc giveKey Oneblock_DexParty %player% 2",
@@ -2137,7 +2119,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6120x Cobre, &e64x Oro, &b10x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: REFUERZO MÁGICO ✦",
-            "&f• &e$6,000,000 en Efectivo &7+ &b400 Niveles de EXP",
+            "&f• &b400 Niveles de EXP",
             "&f• &a3x Llaves Dextra&7, &c3x KOTH &7y &d2x DexParty",
             "&f• &512x Runas por cada Tier &7+ &56x Runas Exalted",
             "&f• &b3x Polvos Mágicos por cada Tier",
@@ -2255,7 +2237,6 @@
             "mm items give -d %player% moneda_cobre 128",
             "mm items give -d %player% moneda_oro 72",
             "mm items give -d %player% moneda_diamante 12",
-            "eco give %player% 7500000",
             "phoenixc giveKey Oneblock_Dextra %player% 4",
             "phoenixc giveKey Oneblock_KOTH %player% 3",
             "phoenixc giveKey Oneblock_DexParty %player% 2",
@@ -2282,7 +2263,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e72x Oro, &b12x Diamante",
             "&6&l✦ RECOMPENSA ÚNICA: EXPANSIÓN DE ALMAS ✦",
-            "&f• &e$7,500,000 en Efectivo &7+ &b450 Niveles de EXP",
+            "&f• &b450 Niveles de EXP",
             "&f• &a4x Llaves Dextra&7, &c3x KOTH &7y &d2x DexParty",
             "&f• &514x Runas por cada Tier &7+ &57x Runas Exalted",
             "&f• &b4x Polvos Mágicos por cada Tier",
@@ -2411,7 +2392,6 @@
             "mm items give -d %player% moneda_oro 80",
             "mm items give -d %player% moneda_diamante 12",
             "mm items give -d %player% moneda_netherite 2",
-            "eco give %player% 10000000",
             "asets give %player% TitanAbismo",
             "asets weapon %player% TitanAbismo",
             "phoenixc giveKey Oneblock_Dextra %player% 5",
@@ -2443,7 +2423,7 @@
             "&8&l✦ HITO ERA III - TITÁN DEL ABISMO ✦",
             "&f• &8Full Set de Netherite: &lTitán del Abismo &7(Resistencia II + Robo de Vida)",
             "&f• &8Arma Exclusiva: &lFilo del Titán Abisal &7(+20% Daño + Desangrado)",
-            "&f• &e$10,000,000 en Efectivo &7+ &b500 Niveles de EXP",
+            "&f• &b500 Niveles de EXP",
             "&f• &a5x Llaves Dextra&7, &c4x KOTH &7y &d3x DexParty",
             "&f• &e1x Slot Increaser &7(+1 slot para encantamientos)",
             "&f• &f2x Holy White Scrolls &7+ &86x Black Scrolls (100%)",
@@ -2564,7 +2544,6 @@
             "mm items give -d %player% moneda_oro 88",
             "mm items give -d %player% moneda_diamante 14",
             "mm items give -d %player% moneda_netherite 2",
-            "eco give %player% 12000000",
             "phoenixc giveKey Oneblock_Dextra %player% 5",
             "phoenixc giveKey Oneblock_KOTH %player% 5",
             "phoenixc giveKey Oneblock_DexParty %player% 4",
@@ -2591,7 +2570,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e88x Oro, &b14x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: DOMINIO EXALTED ✦",
-            "&f• &e$12,000,000 en Efectivo &7+ &b600 Niveles de EXP",
+            "&f• &b600 Niveles de EXP",
             "&f• &a5x Llaves Dextra&7, &c5x KOTH &7y &d4x DexParty",
             "&f• &518x Runas por cada Tier &7+ &59x Runas Exalted",
             "&f• &b6x Polvos Mágicos por cada Tier &7+ &d6x Randomizers Exalted",
@@ -2712,7 +2691,6 @@
             "mm items give -d %player% moneda_oro 96",
             "mm items give -d %player% moneda_diamante 14",
             "mm items give -d %player% moneda_netherite 2",
-            "eco give %player% 14000000",
             "phoenixc giveKey Oneblock_Dextra %player% 6",
             "phoenixc giveKey Oneblock_KOTH %player% 5",
             "phoenixc giveKey Oneblock_DexParty %player% 4",
@@ -2739,7 +2717,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e96x Oro, &b14x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: PURIFICACIÓN ✦",
-            "&f• &e$14,000,000 en Efectivo &7+ &b700 Niveles de EXP",
+            "&f• &b700 Niveles de EXP",
             "&f• &a6x Llaves Dextra&7, &c5x KOTH &7y &d4x DexParty",
             "&f• &520x Runas por cada Tier &7+ &510x Runas Exalted",
             "&f• &b7x Polvos Mágicos por cada Tier",
@@ -2861,7 +2839,6 @@
             "mm items give -d %player% moneda_oro 104",
             "mm items give -d %player% moneda_diamante 16",
             "mm items give -d %player% moneda_netherite 2",
-            "eco give %player% 16000000",
             "phoenixc giveKey Oneblock_Dextra %player% 6",
             "phoenixc giveKey Oneblock_KOTH %player% 6",
             "phoenixc giveKey Oneblock_DexParty %player% 5",
@@ -2889,7 +2866,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e104x Oro, &b16x Diamante, &52x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: FORJA CELESTIAL ✦",
-            "&f• &e$16,000,000 en Efectivo &7+ &b800 Niveles de EXP",
+            "&f• &b800 Niveles de EXP",
             "&f• &a6x Llaves Dextra&7, &c6x KOTH &7y &d5x DexParty",
             "&f• &e1x Slot Increaser &7(+1 slot para encantamientos)",
             "&f• &522x Runas por cada Tier &7+ &511x Runas Exalted",
@@ -3011,7 +2988,6 @@
             "mm items give -d %player% moneda_oro 112",
             "mm items give -d %player% moneda_diamante 16",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 18000000",
             "phoenixc giveKey Oneblock_Dextra %player% 7",
             "phoenixc giveKey Oneblock_KOTH %player% 7",
             "phoenixc giveKey Oneblock_DexParty %player% 6",
@@ -3038,7 +3014,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e112x Oro, &b16x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: ALMAS INFINITAS ✦",
-            "&f• &e$18,000,000 en Efectivo &7+ &b900 Niveles de EXP",
+            "&f• &b900 Niveles de EXP",
             "&f• &a7x Llaves Dextra&7, &c7x KOTH &7y &d6x DexParty",
             "&f• &524x Runas por cada Tier &7+ &512x Runas Exalted",
             "&f• &b9x Polvos Mágicos por cada Tier",
@@ -3167,7 +3143,6 @@
             "mm items give -d %player% moneda_oro 120",
             "mm items give -d %player% moneda_diamante 18",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 22000000",
             "phoenixc giveKey Oneblock_Dextra %player% 8",
             "phoenixc giveKey Oneblock_KOTH %player% 8",
             "phoenixc giveKey Oneblock_DexParty %player% 8",
@@ -3195,7 +3170,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e120x Oro, &b18x Diamante, &54x Netherita",
             "&5&l✦ HITO ERA IV - CONQUISTADOR DEL FIN ✦",
-            "&f• &e$22,000,000 en Efectivo &7+ &b1,000 Niveles de EXP",
+            "&f• &b1,000 Niveles de EXP",
             "&f• &a8x Llaves Dextra&7, &c8x KOTH &7y &d8x DexParty",
             "&f• &e2x Slot Increasers &7(+2 slots para encantamientos)",
             "&f• &526x Runas por cada Tier &7+ &513x Runas Exalted",
@@ -3312,7 +3287,6 @@
             "mm items give -d %player% moneda_oro 128",
             "mm items give -d %player% moneda_diamante 20",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 26000000",
             "phoenixc giveKey Oneblock_Dextra %player% 9",
             "phoenixc giveKey Oneblock_KOTH %player% 9",
             "phoenixc giveKey Oneblock_DexParty %player% 10",
@@ -3339,7 +3313,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b20x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: DESPERTAR ABISAL ✦",
-            "&f• &e$26,000,000 en Efectivo &7+ &b1,200 Niveles de EXP",
+            "&f• &b1,200 Niveles de EXP",
             "&f• &a9x Llaves Dextra&7, &c9x KOTH &7y &d10x DexParty",
             "&f• &528x Runas por cada Tier &7+ &514x Runas Exalted",
             "&f• &b11x Polvos Mágicos por cada Tier",
@@ -3465,7 +3439,6 @@
             "mm items give -d %player% moneda_oro 128",
             "mm items give -d %player% moneda_diamante 20",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 30000000",
             "phoenixc giveKey Oneblock_Dextra %player% 10",
             "phoenixc giveKey Oneblock_KOTH %player% 10",
             "phoenixc giveKey Oneblock_DexParty %player% 12",
@@ -3492,7 +3465,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b20x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: PROTECCIÓN DIVINA ✦",
-            "&f• &e$30,000,000 en Efectivo &7+ &b1,500 Niveles de EXP",
+            "&f• &b1,500 Niveles de EXP",
             "&f• &a10x Llaves Dextra&7, &c10x KOTH &7y &d12x DexParty",
             "&f• &530x Runas por cada Tier &7+ &515x Runas Exalted",
             "&f• &b12x Polvos Mágicos por cada Tier",
@@ -3619,7 +3592,6 @@
             "mm items give -d %player% moneda_oro 128",
             "mm items give -d %player% moneda_diamante 22",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 35000000",
             "phoenixc giveKey Oneblock_Dextra %player% 12",
             "phoenixc giveKey Oneblock_KOTH %player% 12",
             "phoenixc giveKey Oneblock_DexParty %player% 14",
@@ -3647,7 +3619,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b22x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: MAESTRÍA DE SLOTS ✦",
-            "&f• &e$35,000,000 en Efectivo &7+ &b2,000 Niveles de EXP",
+            "&f• &b2,000 Niveles de EXP",
             "&f• &a12x Llaves Dextra&7, &c12x KOTH &7y &d14x DexParty",
             "&f• &e2x Slot Increasers &7(+2 slots para encantamientos)",
             "&f• &532x Runas por cada Tier &7+ &515x Runas Exalted",
@@ -3775,7 +3747,6 @@
             "mm items give -d %player% moneda_oro 128",
             "mm items give -d %player% moneda_diamante 24",
             "mm items give -d %player% moneda_netherite 4",
-            "eco give %player% 40000000",
             "phoenixc giveKey Oneblock_Dextra %player% 14",
             "phoenixc giveKey Oneblock_KOTH %player% 14",
             "phoenixc giveKey Oneblock_DexParty %player% 18",
@@ -3802,7 +3773,7 @@
           "beneficies": [
             "&6🪙 Monedas de Ascenso: &6128x Cobre, &e128x Oro, &b24x Diamante, &54x Netherita",
             "&6&l✦ RECOMPENSA ÚNICA: CÚSPIDE DE ONEBLOCK ✦",
-            "&f• &e$40,000,000 en Efectivo &7+ &b2,500 Niveles de EXP",
+            "&f• &b2,500 Niveles de EXP",
             "&f• &a14x Llaves Dextra&7, &c14x KOTH &7y &d18x DexParty",
             "&f• &532x Runas por cada Tier &7+ &516x Runas Exalted",
             "&f• &b14x Polvos Mágicos por cada Tier",
@@ -3942,7 +3913,6 @@
             "mm items give -d %player% moneda_oro 128",
             "mm items give -d %player% moneda_diamante 32",
             "mm items give -d %player% moneda_netherite 6",
-            "eco give %player% 50000000",
             "asets give %player% DeidadOneBlock",
             "asets weapon %player% DeidadOneBlock",
             "phoenixc giveKey Oneblock_KOTH %player% 16",
@@ -3976,7 +3946,7 @@
             "&d✧&l✦ RECOMPENSA SUPREMA: DEIDAD DEL ONEBLOCK ✦&d✧",
             "&f• &dFull Set de Netherite: &lDeidad del OneBlock &7(+2 Corazones por pieza / +8 Total)",
             "&f• &dArma Exclusiva: &lHacha de la Deidad &7(+20% Daño + Cleave + Robo de Vida)",
-            "&f• &e$50,000,000 en Efectivo &7+ &b5,000 Niveles de EXP",
+            "&f• &b5,000 Niveles de EXP",
             "&f• &c16x Llaves KOTH&7, &d24x Llaves DexParty &7y &a16x Llaves Dextra",
             "&f• &516x Runas Exalted &7+ &532x Runas por cada uno de los 6 Tiers",
             "&f• &b12x Polvos Exalted &7+ &b16x Polvos por cada uno de los 6 Tiers",
