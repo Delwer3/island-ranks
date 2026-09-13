@@ -412,16 +412,6 @@
             "expression": "%superior_island_level_raw% >= 50000",
             "label": "Nivel de Isla 50,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 250",
-            "label": "Habilidades Comunales 250",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.engendro_del_end.kill.of.all.island.members >= 20",
-            "label": "20x Engendros del End",
-            "icon": "ENDER_PEARL"
           }
         ]
       },
@@ -737,11 +727,6 @@
             "expression": "%superior_island_level_raw% >= 350000",
             "label": "Nivel de Isla 350,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 500",
-            "label": "Habilidades Comunales 500",
-            "icon": "BOOKSHELF"
           }
         ]
       },
@@ -846,11 +831,6 @@
             "expression": "%superior_island_level_raw% >= 500000",
             "label": "Nivel de Isla 500,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.cazador_del_vacio.kill.of.all.island.members >= 30",
-            "label": "30x Cazadores del Vacio",
-            "icon": "BOW"
           }
         ]
       },
@@ -957,16 +937,6 @@
             "expression": "%superior_island_level_raw% >= 750000",
             "label": "Nivel de Isla 750,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 800",
-            "label": "Habilidades Comunales 800",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.cubo_del_vacio.kill.of.all.island.members >= 30",
-            "label": "30x Cubos del Vacio",
-            "icon": "SLIME_BALL"
           }
         ]
       },
@@ -1307,11 +1277,6 @@
             "expression": "%superior_island_level_raw% >= 2000000",
             "label": "Nivel de Isla 2,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.devorador_de_obsidiana.kill.of.all.island.members >= 30",
-            "label": "30x Devorador Obsidiana",
-            "icon": "OBSIDIAN"
           }
         ]
       },
@@ -1422,11 +1387,6 @@
             "expression": "%superior_island_level_raw% >= 2600000",
             "label": "Nivel de Isla 2,600,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 1200",
-            "label": "Habilidades Comunales 1,200",
-            "icon": "BOOKSHELF"
           }
         ]
       },
@@ -1536,16 +1496,6 @@
             "expression": "%superior_island_level_raw% >= 3300000",
             "label": "Nivel de Isla 3,300,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 1500",
-            "label": "Habilidades Comunales 1,500",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.vulcanis.kill.of.all.island.members >= 3",
-            "label": "Derrotar 3x Vulcanis",
-            "icon": "BLAZE_ROD"
           }
         ]
       },
@@ -1660,11 +1610,6 @@
             "expression": "%superior_island_level_raw% >= 4200000",
             "label": "Nivel de Isla 4,200,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.errante_del_vacio.kill.of.all.island.members >= 35",
-            "label": "35x Errantes del Vacio",
-            "icon": "ENDER_EYE"
           }
         ]
       },
@@ -1798,11 +1743,6 @@
             "expression": "%superior_island_level_raw% >= 5200000",
             "label": "Nivel de Isla 5,200,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 2000",
-            "label": "Habilidades Comunales 2,000",
-            "icon": "BOOKSHELF"
           }
         ]
       },
@@ -1936,11 +1876,6 @@
             "expression": "%superior_island_level_raw% >= 6300000",
             "label": "Nivel de Isla 6,300,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.bestia_del_abismo.kill.of.all.island.members >= 30",
-            "label": "30x Bestias del Abismo",
-            "icon": "PHANTOM_MEMBRANE"
           }
         ]
       },
@@ -2075,11 +2010,6 @@
             "expression": "%superior_island_level_raw% >= 7500000",
             "label": "Nivel de Isla 7,500,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.heraldo_del_vacio.kill.of.all.island.members >= 4",
-            "label": "Derrotar 4x Heraldo Vacio",
-            "icon": "WIND_CHARGE"
           }
         ]
       },
@@ -2213,16 +2143,6 @@
             "expression": "%superior_island_level_raw% >= 9000000",
             "label": "Nivel de Isla 9,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 2800",
-            "label": "Habilidades Comunales 2,800",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.morkess.kill.of.all.island.members >= 4",
-            "label": "Derrotar 4x Mor'kess",
-            "icon": "SLIME_BALL"
           }
         ]
       },
@@ -2510,11 +2430,6 @@
             "expression": "%superior_island_level_raw% >= 12000000",
             "label": "Nivel de Isla 12,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 3500",
-            "label": "Habilidades Comunales 3,500",
-            "icon": "BOOKSHELF"
           }
         ]
       },
@@ -2652,11 +2567,6 @@
             "expression": "%superior_island_level_raw% >= 13500000",
             "label": "Nivel de Isla 13,500,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.mob.boreas.kill.of.all.island.members >= 5",
-            "label": "Derrotar 5x Boreas",
-            "icon": "BLUE_ICE"
           }
         ]
       },
@@ -2797,11 +2707,6 @@
             "expression": "%superior_island_level_raw% >= 15000000",
             "label": "Nivel de Isla 15,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 4200",
-            "label": "Habilidades Comunales 4,200",
-            "icon": "BOOKSHELF"
           }
         ]
       },
@@ -2939,16 +2844,6 @@
             "expression": "%superior_island_level_raw% >= 16500000",
             "label": "Nivel de Isla 16,500,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 5000",
-            "label": "Habilidades Comunales 5,000",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.arquitecto_controlador.kill.of.all.island.members >= 5",
-            "label": "Derrotar 5x Arquitecto",
-            "icon": "TOTEM_OF_UNDYING"
           }
         ]
       },
@@ -3086,11 +2981,6 @@
             "expression": "%superior_island_level_raw% >= 17200000",
             "label": "Nivel de Isla 17,200,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "mythic.bosses.total.kills.of.all.island.members >= 15",
-            "label": "15x Jefes Totales Isla",
-            "icon": "NETHER_STAR"
           }
         ]
       },
@@ -3228,16 +3118,6 @@
             "expression": "%superior_island_level_raw% >= 18000000",
             "label": "Nivel de Isla 18,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 6000",
-            "label": "Habilidades Comunales 6,000",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.bosses.total.kills.of.all.island.members >= 20",
-            "label": "20x Jefes Totales Isla",
-            "icon": "NETHER_STAR"
           }
         ]
       },
@@ -3375,16 +3255,6 @@
             "expression": "%superior_island_level_raw% >= 18800000",
             "label": "Nivel de Isla 18,800,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 7000",
-            "label": "Habilidades Comunales 7,000",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.bosses.total.kills.of.all.island.members >= 25",
-            "label": "25x Jefes Totales Isla",
-            "icon": "NETHER_STAR"
           }
         ]
       },
@@ -3525,16 +3395,6 @@
             "expression": "%superior_island_level_raw% >= 19400000",
             "label": "Nivel de Isla 19,400,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 8000",
-            "label": "Habilidades Comunales 8,000",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.mob.lord_aurelius.kill.of.all.island.members >= 2",
-            "label": "Derrotar 2x Lord Aurelius",
-            "icon": "NETHER_STAR"
           }
         ]
       },
@@ -3678,21 +3538,6 @@
             "expression": "%superior_island_level_raw% >= 20000000",
             "label": "Nivel de Isla 20,000,000",
             "icon": "BEACON"
-          },
-          {
-            "expression": "island.communal.skills >= 10000",
-            "label": "Habilidades Comunales 10,000",
-            "icon": "BOOKSHELF"
-          },
-          {
-            "expression": "mythic.bosses.total.kills.of.all.island.members >= 30",
-            "label": "Al menos 30 Jefes Derrotados",
-            "icon": "DRAGON_HEAD"
-          },
-          {
-            "expression": "mythic.mob.lord_aurelius.kill.of.all.island.members >= 3",
-            "label": "Derrotar 3x Lord Aurelius",
-            "icon": "NETHER_STAR"
           }
         ]
       },
